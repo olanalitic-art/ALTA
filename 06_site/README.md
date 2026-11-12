@@ -33,7 +33,7 @@ components/
 ## Источники
 
 - Input: https://github.com/AndrewKz499/ALTA_IDE/tree/main/components/input
-- Toggle: https://github.com/Nastya-nikki/ALTA/tree/main/02_components/ide/AltaIDE_Toggle
+- Toggle: https://github.com/olanalitic-art/ALTA/tree/main/02_components/ide/AltaIDE_Toggle
 
 Материалы прочитаны из main 02.11.2026. Input CSS и токены скопированы из первого репозитория. SVG Toggle сохранены без изменения геометрии и цветов. Rubik 400 / 500 / 600 включён локально и подключён к обеим страницам и каталогу.
 

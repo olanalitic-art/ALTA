@@ -2,7 +2,7 @@
 
 Числовое поле с выбором дополнительного параметра.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_InputNumberDouble/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/input-number-double/preview.html)  
 Источник: [AltaIDE/InputNumberDouble, node 190721:29824](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=190721-29824).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

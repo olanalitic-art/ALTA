@@ -2,7 +2,7 @@
 
 Область для комментария.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/cfc/AltaCFC_Node_Comments/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/node-comments/preview.html)  
 Источник: [AltaCFC/Comments, node 567:5560](https://www.figma.com/design/mH9VH4Aa9UWukg9HWFvT8y/?node-id=567-5560).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

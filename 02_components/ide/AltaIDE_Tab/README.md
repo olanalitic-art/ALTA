@@ -2,7 +2,7 @@
 
 Вкладка с текстом, иконкой и необязательным индикатором.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Tab/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/tab/preview.html)  
 Источник: [AltaIDE/Tab, node 185580:24068](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185580-24068).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

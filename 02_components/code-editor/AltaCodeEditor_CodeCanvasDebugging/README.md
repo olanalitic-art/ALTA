@@ -2,7 +2,7 @@
 
 Область отображения кода во время отладки.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/code-editor/AltaCodeEditor_CodeCanvasDebugging/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/code-canvas-debugging/preview.html)  
 Источник: [CodeCanvas_Debugging, node 1391:49174](https://www.figma.com/design/OowUywUctN6BQHA980XMJ4/?node-id=1391-49174).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

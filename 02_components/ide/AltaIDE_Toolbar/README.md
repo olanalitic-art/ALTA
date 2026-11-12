@@ -2,7 +2,7 @@
 
 Панель инструментов.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Toolbar/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/toolbar/preview.html)  
 Источник: [AltaIDE, node 185700:11258](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185700-11258).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

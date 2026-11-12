@@ -2,7 +2,6 @@
 
 Кнопка закрытия окна.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_TitleBarClose/preview.html)  
 Источник: [Title Bar / Parts / Close, node 192452:2421](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=192452-2421).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

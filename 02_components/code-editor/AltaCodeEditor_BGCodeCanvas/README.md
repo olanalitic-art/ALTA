@@ -2,7 +2,7 @@
 
 Фон строки области кода.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/code-editor/AltaCodeEditor_BGCodeCanvas/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/bg-code-canvas/preview.html)  
 Источник: [BG_CodeCanvas, node 656:67169](https://www.figma.com/design/OowUywUctN6BQHA980XMJ4/?node-id=656-67169).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

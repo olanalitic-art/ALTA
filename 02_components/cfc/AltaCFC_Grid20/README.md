@@ -2,7 +2,7 @@
 
 Элемент сетки размером 20 × 20.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/cfc/AltaCFC_Grid20/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/grid-20/preview.html)  
 Источник: [AltaCFC/Grid/20, node 2:4957](https://www.figma.com/design/mH9VH4Aa9UWukg9HWFvT8y/?node-id=2-4957).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

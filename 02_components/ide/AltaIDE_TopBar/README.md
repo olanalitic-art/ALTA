@@ -2,7 +2,7 @@
 
 Верхняя панель приложения.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_TopBar/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/top-bar/preview.html)  
 Источник: [AltaIDE/TopBar, node 185702:18326](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185702-18326).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

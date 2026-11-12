@@ -2,7 +2,7 @@
 
 Переключатель выбора с подписью.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_RadioLabel/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/radio-label/preview.html)  
 Источник: [AltaIDE/RadioLable, node 185225:898](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185225-898).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

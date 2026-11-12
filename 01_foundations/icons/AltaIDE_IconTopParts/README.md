@@ -2,7 +2,7 @@
 
 Разделитель панели инструментов.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconTopParts/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconTopParts/preview.html)  
 Источник: [AltaIDE/TopParts , node 185688:11167](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185688-11167).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

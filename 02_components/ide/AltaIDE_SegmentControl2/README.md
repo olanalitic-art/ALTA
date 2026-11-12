@@ -2,7 +2,7 @@
 
 Компактный переключатель с текстом или иконкой.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_SegmentControl2/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/segment-control-2/preview.html)  
 Источник: [AltaIDE/SegmentedControl, node 204114:41370](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=204114-41370).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

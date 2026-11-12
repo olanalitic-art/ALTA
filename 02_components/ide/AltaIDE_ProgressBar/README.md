@@ -2,7 +2,7 @@
 
 Индикатор выполнения с подписью и остановкой.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_ProgressBar/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/progress-bar/preview.html)  
 Источник: [AltaIDE/ProgressBar, node 186451:1305](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=186451-1305).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

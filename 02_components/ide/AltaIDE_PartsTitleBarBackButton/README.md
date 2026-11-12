@@ -2,7 +2,6 @@
 
 Кнопка возврата.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_PartsTitleBarBackButton/preview.html)  
 Источник: [Parts / Title Bar Back Button, node 192452:2475](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=192452-2475).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

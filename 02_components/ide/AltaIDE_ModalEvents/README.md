@@ -2,7 +2,7 @@
 
 Окно настройки действия.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_ModalEvents/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/modal-events/preview.html)  
 Источник: [AltaIDE/Modal_Events, node 203869:11007](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=203869-11007).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

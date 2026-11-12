@@ -2,7 +2,7 @@
 
 Узел Div.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/cfc/AltaCFC_Node_Div/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/node-div/preview.html)  
 Источник: [AltaCFC/Div, node 129:1960](https://www.figma.com/design/mH9VH4Aa9UWukg9HWFvT8y/?node-id=129-1960).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

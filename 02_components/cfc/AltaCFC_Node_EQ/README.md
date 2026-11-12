@@ -2,7 +2,7 @@
 
 Узел EQ.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/cfc/AltaCFC_Node_EQ/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/node-eq/preview.html)  
 Источник: [AltaCFC/EQ, node 112:1813](https://www.figma.com/design/mH9VH4Aa9UWukg9HWFvT8y/?node-id=112-1813).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

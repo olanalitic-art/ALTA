@@ -2,7 +2,7 @@
 
 Окно выбора программы для привязки.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_ModalLinkedProgram/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/modal-linked-program/preview.html)  
 Источник: [AltaIDE/Modal_LinkedProgram, node 190191:3256](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=190191-3256).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

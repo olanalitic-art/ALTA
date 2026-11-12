@@ -2,7 +2,7 @@
 
 Элемент дерева настроек устройства.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_TreeLevelsDevice/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/tree-levels-device/preview.html)  
 Источник: [AltaIDE/TreeLevelsDevice, node 185627:14174](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185627-14174).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

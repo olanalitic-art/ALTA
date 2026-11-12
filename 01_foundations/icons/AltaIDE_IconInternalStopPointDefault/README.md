@@ -2,7 +2,7 @@
 
 Иконка интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconInternalStopPointDefault/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconInternalStopPointDefault/preview.html)  
 Источник: [AltaIDE/Icons/Internal/StopPointDefault, node 198064:93403](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=198064-93403).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

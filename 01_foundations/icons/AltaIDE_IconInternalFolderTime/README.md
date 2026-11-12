@@ -2,7 +2,7 @@
 
 Иконка интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconInternalFolderTime/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconInternalFolderTime/preview.html)  
 Источник: [AltaIDE/Icons/Internal/FolderTime, node 198064:93094](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=198064-93094).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

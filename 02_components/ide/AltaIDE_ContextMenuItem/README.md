@@ -2,7 +2,7 @@
 
 Пункт контекстного меню.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_ContextMenuItem/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/context-menu-item/preview.html)  
 Источник: [AltaIDE/LiContext, node 185634:1154](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185634-1154).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

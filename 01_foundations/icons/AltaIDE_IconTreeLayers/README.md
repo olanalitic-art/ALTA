@@ -2,7 +2,7 @@
 
 Набор иконок интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconTreeLayers/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconTreeLayers/preview.html)  
 Источник: [AltaIDE/Icons/Tree/Layers, node 182594:98263](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=182594-98263).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

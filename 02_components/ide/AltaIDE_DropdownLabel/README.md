@@ -2,7 +2,7 @@
 
 Поле выбора с подписью.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_DropdownLabel/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/dropdown-label/preview.html)  
 Источник: [AltaIDE/DropdownLabel, node 187251:2393](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=187251-2393).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

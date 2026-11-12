@@ -2,7 +2,7 @@
 
 Боковая панель проекта.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Sidebar/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/sidebar/preview.html)  
 Источник: [AltaIDE/Sidebar, node 185625:44020](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185625-44020).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

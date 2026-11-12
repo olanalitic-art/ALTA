@@ -2,7 +2,7 @@
 
 Контекстная подсказка.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_TooltipEditor/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/02_components/ide/AltaIDE_TooltipEditor/preview.html)  
 Источник: [AltaIDE/TooltipEditor, node 185541:35891](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185541-35891).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

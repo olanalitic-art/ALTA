@@ -2,7 +2,7 @@
 
 Иконка интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconTreeLayersCodeCfc2LinkDefault/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconTreeLayersCodeCfc2LinkDefault/preview.html)  
 Источник: [AltaIDE/Icons/Tree/Layers/Code_CFC2_Link/Default, node 199051:1231](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=199051-1231).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

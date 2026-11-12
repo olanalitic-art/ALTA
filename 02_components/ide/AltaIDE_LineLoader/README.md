@@ -2,7 +2,7 @@
 
 Линейный индикатор выполнения.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_LineLoader/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/line-loader/preview.html)  
 Источник: [AltaIDE/LineLoader, node 199300:3960](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=199300-3960).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

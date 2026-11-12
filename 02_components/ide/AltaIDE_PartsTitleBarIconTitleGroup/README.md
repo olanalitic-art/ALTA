@@ -2,7 +2,7 @@
 
 Заголовок окна и кнопка возврата.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_PartsTitleBarIconTitleGroup/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/title-bar-title-group/preview.html)  
 Источник: [Parts / Title Bar Icon & Title Group, node 192452:2505](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=192452-2505).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

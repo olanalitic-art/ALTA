@@ -2,7 +2,7 @@
 
 Информационное сообщение с действиями.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Banner/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/banner/preview.html)  
 Источник: [AltaIDE/Banner, node 185239:191](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185239-191).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 31.10.2026.

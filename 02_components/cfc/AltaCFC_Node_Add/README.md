@@ -2,7 +2,7 @@
 
 Узел Add.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/cfc/AltaCFC_Node_Add/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/node-add/preview.html)  
 Источник: [AltaCFC/Add, node 6:983](https://www.figma.com/design/mH9VH4Aa9UWukg9HWFvT8y/?node-id=6-983).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

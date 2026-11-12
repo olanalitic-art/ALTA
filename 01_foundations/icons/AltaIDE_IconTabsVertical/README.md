@@ -2,7 +2,7 @@
 
 Набор иконок интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconTabsVertical/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconTabsVertical/preview.html)  
 Источник: [AltaIDE/Icons/Tabs/Vertical, node 202598:7050](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=202598-7050).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

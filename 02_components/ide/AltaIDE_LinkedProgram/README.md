@@ -2,7 +2,7 @@
 
 Строка привязки программы к задаче.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_LinkedProgram/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/linked-program/preview.html)  
 Источник: [AltaIDE/LinkedProgram, node 190175:7727](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=190175-7727).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

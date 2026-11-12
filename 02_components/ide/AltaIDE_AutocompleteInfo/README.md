@@ -2,7 +2,7 @@
 
 Подробная информация о подсказке автодополнения.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_AutocompleteInfo/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/autocomplete-info/preview.html)  
 Источник: [AltaIDE/AutocompleteInfo, node 202319:9696](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=202319-9696).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

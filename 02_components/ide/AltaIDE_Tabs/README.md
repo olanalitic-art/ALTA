@@ -2,7 +2,7 @@
 
 Группа вкладок.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Tabs/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/tabs/preview.html)  
 Источник: [AltaIDE/Tabs, node 185583:24833](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185583-24833).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 31.10.2026.

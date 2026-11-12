@@ -2,7 +2,7 @@
 
 Набор иконок интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconArrowStroke/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconArrowStroke/preview.html)  
 Источник: [AltaIDE/Icons/Arrow/Stroke, node 182606:102364](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=182606-102364).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

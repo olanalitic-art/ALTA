@@ -2,7 +2,6 @@
 
 Контекстное меню.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_ContextMenuLightL/preview.html)  
 Источник: [AltaIDE/ContextMenu/Light/L, node 199510:488](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=199510-488).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

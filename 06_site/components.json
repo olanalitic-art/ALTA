@@ -3,8 +3,8 @@
     "id": "input",
     "name": "Input",
     "kind": "Текстовое поле",
-    "github": "https://github.com/AndrewKz499/ALTA_IDE/tree/main/components/input",
-    "source": "https://andrewkz499.github.io/ALTA_IDE/components/input/preview.html",
+    "github": "https://github.com/olanalitic-art/ALTA/tree/main/02_components/ide/AltaIDE_Input",
+    "source": "https://olanalitic-art.github.io/ALTA/02_components/ide/AltaIDE_Input/preview.html",
     "status": "Макет для согласования",
     "version": null
   },
@@ -12,8 +12,8 @@
     "id": "toggle",
     "name": "Toggle",
     "kind": "Переключатель",
-    "github": "https://github.com/Nastya-nikki/ALTA/tree/main/02_components/ide/AltaIDE_Toggle",
-    "source": "https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Toggle/preview.html",
+    "github": "https://github.com/olanalitic-art/ALTA/tree/main/02_components/ide/AltaIDE_Toggle",
+    "source": "https://olanalitic-art.github.io/ALTA/02_components/ide/AltaIDE_Toggle/preview.html",
     "figma": "https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185224-165",
     "status": "Реализовано, ожидает проверки дизайнером (по README источника)",
     "version": null
@@ -22,7 +22,7 @@
     "id": "hints",
     "name": "Hints",
     "kind": "Короткая контекстная подсказка.",
-    "github": "https://github.com/Nastya-nikki/ALTA/tree/main/02_components/ide/AltaIDE_Hints",
+    "github": "https://github.com/olanalitic-art/ALTA/tree/main/02_components/ide/AltaIDE_Hints",
     "preview": "components/hints/preview.html",
     "status": "Реализовано, ожидает проверки дизайнером",
     "version": null
@@ -31,7 +31,7 @@
     "id": "radio",
     "name": "Radio",
     "kind": "Переключатель выбора одного значения.",
-    "github": "https://github.com/Nastya-nikki/ALTA/tree/main/02_components/ide/AltaIDE_Radio",
+    "github": "https://github.com/olanalitic-art/ALTA/tree/main/02_components/ide/AltaIDE_Radio",
     "preview": "components/radio/preview.html",
     "status": "Реализовано, ожидает проверки дизайнером",
     "version": null
@@ -40,7 +40,7 @@
     "id": "tooltip-help",
     "name": "TooltipHelp",
     "kind": "Контекстная подсказка с названием команды или пояснением.",
-    "github": "https://github.com/Nastya-nikki/ALTA/tree/main/02_components/ide/AltaIDE_TooltipHelp",
+    "github": "https://github.com/olanalitic-art/ALTA/tree/main/02_components/ide/AltaIDE_TooltipHelp",
     "preview": "components/tooltip-help/preview.html",
     "status": "Реализовано, ожидает проверки дизайнером",
     "version": null
@@ -49,7 +49,7 @@
     "id": "tooltip-editor",
     "name": "TooltipEditor",
     "kind": "Контекстная подсказка с сообщением и указателем.",
-    "github": "https://github.com/Nastya-nikki/ALTA/tree/main/02_components/ide/AltaIDE_TooltipEditor",
+    "github": "https://github.com/olanalitic-art/ALTA/tree/main/02_components/ide/AltaIDE_TooltipEditor",
     "preview": "components/tooltip-editor/preview.html",
     "status": "Реализовано, ожидает проверки дизайнером",
     "version": null
@@ -58,7 +58,7 @@
     "id": "banner",
     "name": "Banner",
     "kind": "Информационное сообщение с действиями.",
-    "github": "https://github.com/Nastya-nikki/ALTA/tree/main/02_components/ide/AltaIDE_Banner",
+    "github": "https://github.com/olanalitic-art/ALTA/tree/main/02_components/ide/AltaIDE_Banner",
     "preview": "components/banner/preview.html",
     "status": "Реализовано, ожидает проверки дизайнером",
     "version": null

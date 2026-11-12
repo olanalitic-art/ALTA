@@ -2,7 +2,7 @@
 
 Двоичный переключатель значения бита.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Bit/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/bit/preview.html)  
 Источник: [AltaIDE/Bit, node 200029:1627](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=200029-1627).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

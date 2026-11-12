@@ -2,7 +2,7 @@
 
 Иконка интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconInternalContinue/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconInternalContinue/preview.html)  
 Источник: [AltaIDE/Icons/Internal/Continue, node 198064:93409](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=198064-93409).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

@@ -2,7 +2,7 @@
 
 Иерархическая таблица.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_TableLevels/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/table-levels/preview.html)  
 Источник: [AltaIDE/TableLevels, node 196710:3067](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=196710-3067).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

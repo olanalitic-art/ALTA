@@ -2,7 +2,7 @@
 
 Текстовое поле с подписью.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_InputLabel/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/input-label/preview.html)  
 Источник: [AltaIDE/InputLable, node 187165:104](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=187165-104).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

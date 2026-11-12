@@ -2,7 +2,7 @@
 
 Группа переключателей.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_SegmentControl/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/segment-control/preview.html)  
 Источник: [AltaIDE/SegmentControl, node 185481:14775](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185481-14775).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

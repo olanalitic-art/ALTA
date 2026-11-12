@@ -2,7 +2,7 @@
 
 Разделитель пунктов меню.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Separator/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/separator/preview.html)  
 Источник: [AltaIDE/Separation, node 185634:1258](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185634-1258).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

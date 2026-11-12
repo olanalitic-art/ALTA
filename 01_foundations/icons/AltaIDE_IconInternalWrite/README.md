@@ -2,7 +2,7 @@
 
 Иконка интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconInternalWrite/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconInternalWrite/preview.html)  
 Источник: [AltaIDE/Icons/Internal/Write, node 198064:93375](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=198064-93375).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

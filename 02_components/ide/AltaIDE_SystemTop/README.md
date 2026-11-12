@@ -2,7 +2,7 @@
 
 Системная панель заголовка окна.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_SystemTop/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/system-top/preview.html)  
 Источник: [AltaIDE/System_Top, node 183496:67694](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=183496-67694).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

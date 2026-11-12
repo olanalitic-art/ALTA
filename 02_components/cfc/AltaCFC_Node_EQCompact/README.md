@@ -2,7 +2,7 @@
 
 Компактный узел EQ.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/cfc/AltaCFC_Node_EQCompact/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/node-eq-compact/preview.html)  
 Источник: [AltaCFC/EQCompact, node 125:1424](https://www.figma.com/design/mH9VH4Aa9UWukg9HWFvT8y/?node-id=125-1424).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.
