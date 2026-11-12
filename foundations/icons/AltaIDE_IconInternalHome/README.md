@@ -1,0 +1,20 @@
+# AltaIDE_IconInternalHome
+
+Иконка интерфейса.
+
+Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/foundations/icons/AltaIDE_IconInternalHome/preview.html)  
+Источник: [AltaIDE/Icons/Internal/Home, node 204362:4533](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=204362-4533).  
+Статус: реализовано, ожидает проверки дизайнером.  
+Дизайн, переменные и варианты прочитаны 02.11.2026.
+
+## Файлы
+
+- `index.html` — отдельный пример.
+- `preview.html` — карточка компонента.
+- `icon-internal-home.css` — оформление из дизайн-контекста.
+- `icon-internal-home.js` — подтверждённые варианты.
+- `assets/` — исходные идентификаторы и оригинальные ресурсы Figma.
+- `../../tokens/altaide-composed.css` — проверенные токены и цепочки алиасов Figma.
+- `../../runtime/shell.js` — общая логика локального примера.
+
+Полные значения переменных, режимы и цепочки алиасов проверены в текущей Figma и сохранены в `../../tokens/figma-altaide-composed-variables.json`.

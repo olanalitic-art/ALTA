@@ -1,0 +1,20 @@
+# AltaCFC_PortsInout
+
+Обозначение порта ввода-вывода.
+
+Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/components/cfc/AltaCFC_PortsInout/preview.html)  
+Источник: [AltaCFC/Ports/Inout, node 478:1508](https://www.figma.com/design/mH9VH4Aa9UWukg9HWFvT8y/?node-id=478-1508).  
+Статус: реализовано, ожидает проверки дизайнером.  
+Дизайн, переменные и варианты прочитаны 01.11.2026.
+
+## Файлы
+
+- `index.html` — отдельный пример.
+- `preview.html` — карточка компонента.
+- `ports-inout.css` — оформление по актуальной спецификации Figma.
+- `ports-inout.js` — существующие варианты и состояния.
+- `assets/figma-source.json` — исходные идентификаторы, свойства и проверенные привязки.
+- `../../../foundations/tokens/alta-cfc.css` — переменные и цепочки алиасов Figma.
+- `../../../foundations/runtime/cfc.js` — общая логика компонента и локального примера.
+
+Проверенный экспорт переменных и доступных режимов сохранён в `../../../foundations/tokens/figma-alta-cfc-variables.json`. Собственная коллекция AltaCFC содержит режим Mode 1; импортированные режимы сохранены в данных без добавления новых тем в превью.
