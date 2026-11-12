@@ -2,7 +2,7 @@
 
 Подзаголовок раздела.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Subtitle/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/subtitle/preview.html)  
 Источник: [AltaIDE/Subtitle, node 187274:9749](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=187274-9749).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

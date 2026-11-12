@@ -2,7 +2,7 @@
 
 Строка комментария с раскрытием содержимого.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_CommentsBar/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/comments-bar/preview.html)  
 Источник: [AltaIDE/CommentsBar, node 190216:33530](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=190216-33530).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

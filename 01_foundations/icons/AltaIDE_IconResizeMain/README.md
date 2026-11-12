@@ -2,7 +2,7 @@
 
 Набор иконок интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconResizeMain/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconResizeMain/preview.html)  
 Источник: [AltaIDE/Icons/Resize/Main, node 185660:441](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185660-441).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

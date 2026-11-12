@@ -2,7 +2,7 @@
 
 Ячейка выбора строки таблицы.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_TableCheckboxContent/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/table-checkbox-content/preview.html)  
 Источник: [AltaIDE/TableCheck_Contents, node 201636:12554](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=201636-12554).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

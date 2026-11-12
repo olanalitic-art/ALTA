@@ -2,7 +2,7 @@
 
 Группа переключателей выбора одного значения.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_RadioSet/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/radio-set/preview.html)  
 Источник: [AltaIDE/RadioSet, node 185259:277](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185259-277).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

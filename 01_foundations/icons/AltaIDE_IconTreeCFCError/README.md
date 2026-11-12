@@ -2,7 +2,7 @@
 
 Иконка интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconTreeCFCError/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconTreeCFCError/preview.html)  
 Источник: [AltaIDE/Icons/Tree/CFCError, node 203961:40363](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=203961-40363).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

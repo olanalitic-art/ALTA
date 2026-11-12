@@ -2,7 +2,7 @@
 
 Заголовок модального окна.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_ModalHeader/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/modal-header/preview.html)  
 Источник: [AltaIDE/Head_Modal, node 190175:2203](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=190175-2203).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

@@ -2,7 +2,7 @@
 
 Вертикальная панель вкладок.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_TabsVertical/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/tabs-vertical/preview.html)  
 Источник: [AltaIDE/TabsVertical, node 202598:7292](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=202598-7292).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 31.10.2026.

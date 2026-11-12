@@ -2,7 +2,7 @@
 
 Текстовая ссылка, ссылка со стрелкой или внешняя ссылка.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Link/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/link/preview.html)  
 Источник: [AltaIDE/Link, node 185293:1270](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185293-1270).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

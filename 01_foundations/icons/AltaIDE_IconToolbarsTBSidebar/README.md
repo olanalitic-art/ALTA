@@ -2,7 +2,7 @@
 
 Набор иконок интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconToolbarsTBSidebar/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconToolbarsTBSidebar/preview.html)  
 Источник: [AltaIDE/Icons/Toolbars/TB_Sidebar, node 188814:9392](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=188814-9392).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

@@ -2,7 +2,7 @@
 
 Разделитель для изменения размера области.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Resize/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/resize/preview.html)  
 Источник: [AltaIDE/Resize, node 185649:32710](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185649-32710).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 31.10.2026.

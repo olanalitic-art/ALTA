@@ -2,7 +2,7 @@
 
 Строка раздела таблицы.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_StrOfTableAltaIDEStrOfTableDarkSectionAltaIDE/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/table-section-row/preview.html)  
 Источник: [AltaIDE/StrOfTable/AltaIDE/StrOfTable/Dark/Section/AltaIDE, node 185796:15741](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185796-15741).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

@@ -2,7 +2,7 @@
 
 Уведомление с подтверждением действия.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_Notification/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/notification/preview.html)  
 Источник: [AltaIDE/Notification, node 188970:39162](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=188970-39162).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 31.10.2026.

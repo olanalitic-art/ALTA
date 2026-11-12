@@ -2,7 +2,7 @@
 
 Строка области кода с номером и направляющими.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/code-editor/AltaCodeEditor_CodeCanvas/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/code-canvas/preview.html)  
 Источник: [CodeCanvas, node 57:12848](https://www.figma.com/design/OowUywUctN6BQHA980XMJ4/?node-id=57-12848).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

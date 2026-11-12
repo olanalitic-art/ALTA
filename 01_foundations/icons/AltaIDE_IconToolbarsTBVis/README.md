@@ -2,7 +2,7 @@
 
 Набор иконок интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconToolbarsTBVis/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconToolbarsTBVis/preview.html)  
 Источник: [AltaIDE/Icons/Toolbars/TB_Vis, node 203767:1956](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=203767-1956).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

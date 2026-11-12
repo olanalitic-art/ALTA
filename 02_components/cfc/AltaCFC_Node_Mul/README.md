@@ -2,7 +2,7 @@
 
 Узел Mul.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/cfc/AltaCFC_Node_Mul/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/node-mul/preview.html)  
 Источник: [AltaCFC/Mul, node 112:1758](https://www.figma.com/design/mH9VH4Aa9UWukg9HWFvT8y/?node-id=112-1758).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

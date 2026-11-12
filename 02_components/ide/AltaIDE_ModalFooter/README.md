@@ -2,7 +2,7 @@
 
 Панель действий модального окна.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_ModalFooter/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/modal-footer/preview.html)  
 Источник: [AltaIDE/Bottom_Modal, node 190175:2216](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=190175-2216).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

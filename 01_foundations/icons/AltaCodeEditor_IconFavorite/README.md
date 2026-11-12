@@ -2,7 +2,7 @@
 
 Иконка избранного.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaCodeEditor_IconFavorite/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaCodeEditor_IconFavorite/preview.html)  
 Источник: [Icons, node 7:70139](https://www.figma.com/design/OowUywUctN6BQHA980XMJ4/?node-id=7-70139).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

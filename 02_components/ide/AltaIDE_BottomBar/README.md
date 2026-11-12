@@ -2,7 +2,7 @@
 
 Панель вывода сообщений.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_BottomBar/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/bottom-bar/preview.html)  
 Источник: [AltaIDE/Bottom Bar, node 185642:28156](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185642-28156).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

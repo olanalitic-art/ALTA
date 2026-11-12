@@ -2,7 +2,7 @@
 
 Вертикальная полоса прокрутки.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_ScrollVertical/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/scroll-vertical/preview.html)  
 Источник: [AltaIDE/ScrollVertical, node 185649:32550](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185649-32550).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

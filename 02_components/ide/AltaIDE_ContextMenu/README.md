@@ -2,7 +2,7 @@
 
 Контекстное меню.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_ContextMenu/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/context-menu/preview.html)  
 Источник: [AltaIDE/ContextMenu, node 185634:4277](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185634-4277).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

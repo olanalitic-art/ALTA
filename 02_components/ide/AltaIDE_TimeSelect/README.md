@@ -2,7 +2,7 @@
 
 Столбец выбора значения времени.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_TimeSelect/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/time-select/preview.html)  
 Источник: [Time Select, node 200193:8724](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=200193-8724).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

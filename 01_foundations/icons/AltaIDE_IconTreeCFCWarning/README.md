@@ -2,7 +2,7 @@
 
 Иконка интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconTreeCFCWarning/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconTreeCFCWarning/preview.html)  
 Источник: [AltaIDE/Icons/Tree/CFCWarning, node 203966:40472](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=203966-40472).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

@@ -2,7 +2,7 @@
 
 Элемент списка автодополнения.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_AutocompleteItem/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/autocomplete-item/preview.html)  
 Источник: [AltaIDE/AutocompleteItem, node 202319:8119](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=202319-8119).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

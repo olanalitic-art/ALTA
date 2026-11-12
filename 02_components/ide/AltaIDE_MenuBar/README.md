@@ -2,7 +2,7 @@
 
 Главное меню приложения.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_MenuBar/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/menu-bar/preview.html)  
 Источник: [AltaIDE/AltaI_MenuBar, node 185669:9561](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185669-9561).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

@@ -2,7 +2,7 @@
 
 Пункт выбора действия.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_ModalEventsItem/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/modal-events-item/preview.html)  
 Источник: [AltaIDE/Modal_EventsItem, node 203869:11075](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=203869-11075).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

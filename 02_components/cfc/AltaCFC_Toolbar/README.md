@@ -2,7 +2,7 @@
 
 Панель инструментов.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/cfc/AltaCFC_Toolbar/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/cfc-toolbar/preview.html)  
 Источник: [AltaCFC/Toolbar, node 567:744](https://www.figma.com/design/mH9VH4Aa9UWukg9HWFvT8y/?node-id=567-744).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

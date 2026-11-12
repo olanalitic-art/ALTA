@@ -2,7 +2,7 @@
 
 Панель имени и типа.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_NameBar/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/name-bar/preview.html)  
 Источник: [AltaIDE/NameBar, node 190214:29197](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=190214-29197).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

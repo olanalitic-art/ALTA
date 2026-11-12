@@ -2,7 +2,7 @@
 
 Группа маркеров отладки.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/code-editor/AltaCodeEditor_DebuggingPointsStack/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/debugging-points-stack/preview.html)  
 Источник: [Debugging_Points_Stack, node 6:42666](https://www.figma.com/design/OowUywUctN6BQHA980XMJ4/?node-id=6-42666).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 01.11.2026.

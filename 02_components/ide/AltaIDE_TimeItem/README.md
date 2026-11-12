@@ -2,7 +2,7 @@
 
 Элемент выбора значения времени.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_TimeItem/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/time-item/preview.html)  
 Источник: [Time Item, node 200076:421](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=200076-421).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

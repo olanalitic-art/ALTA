@@ -2,7 +2,7 @@
 
 Подсказка с дополнительной информацией.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_TooltipHelp/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/02_components/ide/AltaIDE_TooltipHelp/preview.html)  
 Источник: [AltaIDE/TooltipHelp, node 187360:32311](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=187360-32311).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 30.10.2026.

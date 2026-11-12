@@ -2,7 +2,7 @@
 
 Иконка интерфейса.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/01_foundations/icons/AltaIDE_IconInternalSlaveDeviceLinkError/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/01_foundations/icons/AltaIDE_IconInternalSlaveDeviceLinkError/preview.html)  
 Источник: [AltaIDE/Icons/Internal/SlaveDeviceLinkError, node 203966:41451](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=203966-41451).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

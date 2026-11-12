@@ -2,7 +2,7 @@
 
 Заголовок списка привязок.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_LinkedProgramTop/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/linked-program-top/preview.html)  
 Источник: [AltaIDE/LinkedProgramTop, node 190177:119](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=190177-119).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.

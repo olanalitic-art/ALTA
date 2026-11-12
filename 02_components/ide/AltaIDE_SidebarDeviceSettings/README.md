@@ -2,7 +2,7 @@
 
 Боковая панель настроек устройства.
 
-Превью: [Открыть демонстрацию](https://nastya-nikki.github.io/ALTA/02_components/ide/AltaIDE_SidebarDeviceSettings/preview.html)  
+Превью: [Открыть демонстрацию](https://olanalitic-art.github.io/ALTA/06_site/components/sidebar-device-settings/preview.html)  
 Источник: [AltaIDE/SidebarDeviceSettings, node 185669:5908](https://www.figma.com/design/axdKFZbeqNIfskP18KDs32/?node-id=185669-5908).  
 Статус: реализовано, ожидает проверки дизайнером.  
 Дизайн, переменные и варианты прочитаны 02.11.2026.
