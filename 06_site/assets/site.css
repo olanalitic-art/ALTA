@@ -1,0 +1,340 @@
+
+:root{--page:#fff;--side:#f8f9fb;--panel:#f7f8fa;--ink:#202734;--muted:#687386;--line:#e5e8ed;--blue:#315ee9;--blue-wash:#edf2ff;--green:#26805a;--green-wash:#edf8f1;--error:#bc3548;--shadow:0 2px 6px #19233b05;scroll-behavior:smooth;scroll-padding-top:95px}
+:root[data-theme=dark]{--page:#1b1d22;--side:#181a1f;--panel:#22252c;--ink:#eceef3;--muted:#a2aabb;--line:#343842;--blue:#91adff;--blue-wash:#28334c;--green:#93d2b0;--green-wash:#22372e;--error:#ff899a;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}a{color:inherit;text-decoration:none}button,select{font:inherit}button,a,select,input{touch-action:manipulation}button{cursor:pointer}a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(--blue);outline-offset:4px}svg{width:17px;height:17px;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}button{color:inherit}.top{height:68px;position:fixed;inset:0 0 auto;z-index:10;background:var(--page);border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 30px;justify-content:space-between}.brand{display:flex;align-items:center;gap:13px}.brand strong{font-size:22px;font-weight:800;letter-spacing:1.4px}.brand-mark{width:25px;height:25px;color:var(--blue)}.brand-mark svg{width:25px;height:25px;stroke-width:2.6}.brand span{border-left:1px solid var(--line);padding-left:15px;color:var(--muted);font-size:13px}.top-right{display:flex;gap:17px;align-items:center}.prototype{font-size:11px;color:var(--muted);letter-spacing:.2px}.theme-button{border:1px solid var(--line);border-radius:7px;background:var(--page);padding:7px 11px;font-size:12px;display:flex;gap:8px;align-items:center}.sidebar{position:fixed;right:0;top:56px;bottom:0;width:226px;background:var(--side);border-left:1px solid var(--line);padding:35px 18px;display:flex;flex-direction:column}.nav-label{font-size:10px;text-transform:uppercase;font-weight:650;letter-spacing:1.3px;color:var(--muted);padding:0 14px;margin-bottom:12px}.component-link{display:flex;gap:10px;align-items:center;background:var(--blue-wash);color:var(--blue);border-radius:6px;padding:10px 13px;font-weight:600}.component-link svg{width:18px}.nav-links{display:flex;flex-direction:column;margin:12px 0 0 22px;border-left:1px solid var(--line);gap:2px}.nav-links a{padding:8px 15px;font-size:12px;color:var(--muted)}.nav-links a:hover,.nav-links a.active{color:var(--blue)}.nav-links a.active{box-shadow:-2px 0 var(--blue)}.sidebar-bottom{margin-top:auto;padding:16px 12px 0;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}.sidebar-bottom a{display:flex;gap:8px;align-items:center;margin-bottom:7px;color:var(--ink)}.workspace{margin:56px 226px 0 0;padding:41px 58px 24px}.content{max-width:1040px;margin:auto}.breadcrumb{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:11px;margin-bottom:20px}.breadcrumb span:last-child{color:var(--ink)}.title-line{display:flex;align-items:center;gap:12px}.title-line h1{font-size:40px;line-height:1.15;letter-spacing:-1.4px;margin:0}.chip{display:inline-flex;align-items:center;border:1px solid var(--line);padding:2px 8px;border-radius:5px;font-size:11px;color:var(--muted);white-space:nowrap}.draft{color:var(--blue);border-color:transparent;background:var(--blue-wash)}.intro{font-size:15px;color:var(--muted);margin:14px 0 20px;max-width:650px}.meta{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:27px;border-bottom:1px solid var(--line)}.source-link{font-size:12px;color:var(--blue);display:inline-flex;align-items:center;gap:7px}.meta-note{font-size:11px;color:var(--muted)}section{padding-top:30px}h2{font-size:21px;letter-spacing:-.45px;line-height:1.35;margin:0}h3{font-size:13px;font-weight:600;margin:0 0 9px}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:9px}.section-heading .number{font-size:10px;color:var(--muted);margin-right:9px;vertical-align:middle;font-weight:500;letter-spacing:0}.section-desc{font-size:12px;color:var(--muted);margin:0 0 17px}.demo{border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}.demo-stage{background:var(--panel);min-height:192px;display:flex;justify-content:center;align-items:center;padding:28px}.field-label{font-size:12px;font-weight:600;display:block;margin-bottom:7px}.ds-input{max-width:100%;}.demo-caption{font-size:11px;color:var(--muted);margin-top:12px;min-height:17px}.demo-controls{display:flex;justify-content:space-between;align-items:center;padding:12px 17px;background:var(--page);gap:15px;flex-wrap:wrap}.control-group{display:flex;gap:10px;align-items:center;font-size:11px;color:var(--muted)}.segments{display:flex;gap:2px;background:var(--panel);padding:3px;border-radius:6px}.segments button{border:0;background:transparent;padding:3px 11px;border-radius:4px;font-size:11px;color:var(--muted)}.segments button[aria-pressed=true]{background:var(--page);color:var(--ink);box-shadow:0 1px 4px #00000014}.control-group select{font-size:11px;background:var(--page);color:var(--ink);border:1px solid var(--line);border-radius:5px;padding:4px 23px 4px 8px}.reset{background:none;border:0;padding:4px;color:var(--muted);font-size:11px}.reset svg{width:13px;margin-right:3px}.footnote{font-size:11px;color:var(--muted);margin:10px 0 0}.states{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);border-radius:9px;overflow:hidden}.state{padding:19px 20px 17px;min-width:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.state:nth-child(3n){border-right:0}.state:nth-last-child(-n+3){border-bottom:0}.state .ds-input{width:248px;max-width:100%}.state-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px;gap:6px}.state h3{margin:0;font-size:12px}.state code{font:10px ui-monospace,SFMono-Regular,monospace;color:var(--muted)}.state-note{font-size:10px;color:var(--muted);margin:9px 0 0}.state-hover .ds-input__control{border-color:var(--input-border-hover-filled)}.state-focus .ds-input__control{border-color:var(--input-border-focused);box-shadow:0 0 0 2px var(--blue-wash)}.state-selection .ds-input__control{color:transparent}.selection-wrap{position:relative}.selection-text{position:absolute;top:4px;left:9px;font-size:14px;line-height:20px;background:var(--input-content-bg);color:var(--input-content-focused-blue);pointer-events:none}.usage{display:grid;grid-template-columns:1fr 1fr;gap:15px}.usage-card{border:1px solid var(--line);border-radius:9px;padding:20px 22px}.usage-card .eyebrow{font-size:10px;color:var(--muted);margin-bottom:13px;display:block}.usage-card .ds-input{width:100%;max-width:302px}.usage-card p{font-size:12px;color:var(--muted);margin:15px 0 0}.usage-rule{display:flex;align-items:flex-start;gap:9px;font-size:12px;color:var(--muted);padding:14px 0 0}.usage-rule svg{color:var(--blue);flex-shrink:0;margin-top:1px}.version-panel{border:1px solid var(--line);border-radius:9px;padding:20px 23px}.version-top{display:flex;align-items:center;justify-content:space-between;gap:15px}.version-label{font-size:11px;color:var(--muted);margin-bottom:6px}.version-value{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:600}.version-panel p{font-size:12px;color:var(--muted);margin:11px 0 0}.version-list{padding:13px 0 0;display:flex;gap:8px 30px;flex-wrap:wrap;font-size:11px;color:var(--muted)}.version-list span:before{content:'•';margin-right:7px;color:var(--blue)}details{border-top:1px solid var(--line);margin-top:17px;padding-top:13px}summary{font-size:12px;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between}summary::-webkit-details-marker{display:none}summary:after{content:'+';font-size:18px;color:var(--muted)}details[open] summary:after{content:'−'}.history-item{display:grid;grid-template-columns:110px 1fr;gap:15px;padding:17px 0 2px;font-size:12px}.history-item time{font-size:10px;color:var(--muted)}.history-item p{margin:0}.history-item strong{font-size:12px;font-weight:500}.footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:35px;padding:17px 0 0;border-top:1px solid var(--line);font-size:10px;color:var(--muted)}.footer a{color:var(--blue)}.error-hint{color:var(--error)!important}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(min-width:1500px){.workspace{padding-right:100px;padding-left:100px}}
+@media(max-width:1100px){.workspace{padding:32px}.sidebar{width:196px}.workspace{margin-right:196px}.state{padding:16px 13px}.state code{display:none}}
+@media(max-width:760px){.top{height:58px;padding:0 18px}.brand strong{font-size:19px}.brand span{font-size:11px}.prototype{display:none}.sidebar{display:none}.workspace{margin:56px 0 0;padding:26px 20px}.title-line h1{font-size:34px}.meta{align-items:flex-start;flex-direction:column;gap:8px}.states{grid-template-columns:1fr 1fr}.state:nth-child(n){border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.state:nth-child(2n){border-right:0}.state:nth-last-child(-n+2){border-bottom:0}.usage{grid-template-columns:1fr}.section-heading{align-items:flex-start}.section-heading>.chip{font-size:9px}.version-top{align-items:flex-start}.demo-stage{min-height:190px;padding:24px 15px}.demo-controls{padding:12px;gap:12px}.history-item{grid-template-columns:85px 1fr}}
+
+.component-tree{border:0;margin:0;padding:0;min-height:0}
+.component-tree>summary{justify-content:flex-start;font-size:14px}
+.component-tree>summary:after{content:'›';margin-left:auto;color:var(--blue);font-size:21px;line-height:16px;transform:rotate(0deg)}
+.component-tree[open]>summary:after{transform:rotate(90deg)}
+.nav-links a.tree-source{margin:8px 0 0 14px;padding:10px 0;border-top:1px solid var(--line);color:var(--blue);font-size:11px}
+
+.component-tree{margin-bottom:9px}.component-link{background:transparent;color:var(--muted)}.component-tree.current .component-link{background:var(--blue-wash);color:var(--blue)}.component-link a{flex:1}.component-link a:hover{color:var(--blue)}.nav-links a.active{color:var(--blue)}.sidebar{overflow-y:auto}.catalog-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}.catalog-card{border:1px solid var(--line);border-radius:10px;padding:25px;display:flex;flex-direction:column;gap:16px}.catalog-card:hover{border-color:var(--blue)}.catalog-card h2{font-size:22px}.catalog-card p{font-size:13px;color:var(--muted);margin:0}.catalog-preview{min-height:100px;display:flex;align-items:center;justify-content:center;background:var(--panel);border-radius:7px;padding:16px}.catalog-go{color:var(--blue);font-size:12px}.parameter-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:16px}.parameter-table th,.parameter-table td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.parameter-table th{font-weight:500;color:var(--muted);width:25%}.parameter-table tr:last-child>*{border-bottom:0}.params{border:1px solid var(--line);border-radius:9px;overflow:hidden}.params .parameter-table{margin:0}.toggle-control{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;border:0;background:transparent;padding:0;width:36px;height:20px;cursor:pointer;vertical-align:middle}.toggle-control img{display:block;width:36px;height:20px}.toggle-control:disabled{cursor:not-allowed;opacity:1}.toggle-control:focus-visible{outline:2px solid var(--blue);outline-offset:4px;border-radius:12px}.toggle-line{display:flex;gap:12px;align-items:center}.toggle-line label,.toggle-line>span{font-size:13px}.toggle-states{grid-template-columns:1fr 1fr}.toggle-states .state:nth-child(n){border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.toggle-states .state:nth-child(2n){border-right:0}.toggle-states .state:nth-last-child(-n+2){border-bottom:0}.toggle-sample{min-height:40px;display:flex;align-items:center;gap:13px}.toggle-sample>span{font-size:11px;color:var(--muted)}.mobile-catalog{display:none}.mobile-catalog a{font-size:12px;padding:6px 10px;border:1px solid var(--line);border-radius:5px}.mobile-catalog a[aria-current=page]{color:var(--blue);background:var(--blue-wash)}.sidebar-bottom{padding-top:15px;margin-top:auto}.sources-row{display:flex;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.catalog-grid{grid-template-columns:1fr}.mobile-catalog{display:flex;gap:7px;margin-bottom:22px}.parameter-table th{width:34%}.parameter-table th,.parameter-table td{padding:10px}.top-right{gap:8px}.brand span{padding-left:10px}.theme-button{padding:7px}.theme-button span{font-size:10px}.catalog-preview .ds-input{max-width:100%}}
+
+.component-tree>summary:after{content:'';display:block;width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin:0 3px 0 auto}.component-tree[open]>summary:after{transform:rotate(45deg)}
+
+/* The documentation shell uses the same draft semantic roles as the prototype. */
+:root,:root[data-theme=dark]{--page:var(--color-surface);--side:var(--color-surface-subtle);--panel:var(--color-surface-subtle);--ink:var(--color-content);--muted:var(--color-content-muted);--line:var(--color-border);--blue:var(--color-accent);--blue-wash:var(--color-accent-subtle);--error:var(--color-error)}
+body{font-family:var(--font-family-rubik);font-size:var(--font-body-size);line-height:var(--font-body-line-height)}
+.demo-stage{padding:var(--num-28)}.demo-controls{gap:var(--num-16)}.usage{gap:var(--num-16)}.usage-card{padding:var(--num-20) var(--num-22)}.usage-card p{font-size:var(--font-caption-size);line-height:var(--font-caption-line-height)}
+.state .ds-input{width:var(--input-width-l)}.state-note{line-height:var(--font-caption-line-height)}
+.token-swatches{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--num-12);margin-bottom:var(--num-20)}.token-swatch{border:1px solid var(--line);border-radius:var(--radius-l);overflow:hidden}.token-swatch>div{height:64px}.token-swatch p{margin:0;padding:var(--num-10);font-size:var(--font-caption-size)}.foundation-link{display:block;padding:9px 13px;margin:0 0 18px;color:var(--blue);font-size:12px}.token-note{font-size:12px;color:var(--muted);margin:16px 0}
+@media(max-width:760px){.token-swatches{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.usage-card .ds-input[data-size]{width:var(--_input-width);max-width:100%}
+
+/* Статус примера в левом верхнем углу области, отдельно от поля */
+.demo-stage:has(.demo-caption--corner){position:relative}
+.demo-caption.demo-caption--corner{position:absolute;top:var(--num-16);left:var(--num-16);margin:0;min-height:0}
+
+/* Заголовки карточек использования — как заголовки карточек состояний */
+.usage-card h3{font-size:12px;font-weight:600;margin:0 0 15px}
+
+/* Таблица «Общие параметры» */
+.spec-table thead th{font-weight:500;color:var(--muted);background:var(--panel);width:auto}
+.spec-table th[scope="row"]{width:26%}
+.spec-table td:nth-child(2){width:30%}
+.spec-table code{font:11px ui-monospace,SFMono-Regular,monospace;color:var(--text,inherit)}
+.spec-table tr.group th{font-weight:600;color:inherit;width:auto;padding-top:16px;background:transparent}
+.spec-table .swatch{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:8px;vertical-align:-2px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+@media (max-width:640px){.params{overflow-x:auto}.spec-table{min-width:560px}}
+
+/* Описания в карточках использования прижаты к нижней границе */
+.usage-card{display:flex;flex-direction:column}
+.usage-card .ds-input{margin-bottom:15px}
+.usage-card>p{margin-top:auto}
+.spec-title{font-size:13px;font-weight:600;margin:20px 0 10px}
+.section-desc+.spec-title{margin-top:0}
+
+/* Стрелка дерева компонентов: у раскрытого пункта общее правило details[open] подставляло «−» поверх стрелки */
+.component-tree[open]>summary:after{content:'';font-size:0;line-height:0}
+a.nav-label{display:block;text-decoration:none}
+a.nav-label:hover{color:var(--blue)}
+.usage-card .toggle-line{margin-bottom:15px}
+.toggle-line:has(.toggle-text){align-items:flex-start}
+.toggle-text{display:flex;flex-direction:column;gap:2px;font-size:13px;line-height:20px}
+.toggle-note{font-size:var(--font-caption-size);line-height:var(--font-caption-line-height);color:var(--muted)}
+
+/* Шапка по Figma 204505:216086: градиент как у MenuBar ALTA IDE, одинаковый в обеих темах */
+.top{height:56px;padding:0 10px;border-bottom:0;background:linear-gradient(to right,#690c4c,#1f4ea7 47%,#0a1557);color:#fff}
+.brand{gap:12px;color:#fff}
+.brand .brand-logo{display:flex;border:0;padding:13px 0 13px 8px}
+.brand-logo img{display:block;width:92.6154px;height:14px}
+.brand .brand-sep,.brand .brand-name{border:0;padding:0;color:#fff;font-size:14px;line-height:20px;font-weight:400}
+.top .theme-button{height:36px;box-sizing:border-box;padding:4px 13px 4px 9px;gap:4px;border:1px solid rgba(255,255,255,.3);border-radius:4px;background:transparent;color:#fff;font-size:14px;line-height:20px;cursor:pointer}
+.top .theme-button:hover{background:rgba(255,255,255,.1)}
+.top .theme-button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.top .theme-button .theme-icon{width:20px;height:20px;flex-shrink:0}
+.theme-icon--sun{display:none}
+:root[data-theme="dark"] .theme-icon--sun{display:block}
+:root[data-theme="dark"] .theme-icon--moon{display:none}
+@media(max-width:760px){.top{height:56px;padding:0 10px}.top .theme-button span{font-size:14px}.top .theme-button{padding:4px 13px 4px 9px}}
+@media(max-width:420px){.top .theme-button span{display:none}.top .theme-button{padding:4px}.brand-name,.brand-sep{display:none}}
+/* Вариант «Тёмная тема» в Figma имеет фиксированную ширину 138 px */
+:root:not([data-theme="dark"]) .top .theme-button{width:138px}
+@media(max-width:420px){:root:not([data-theme="dark"]) .top .theme-button{width:auto}}
+
+/* Боковое меню: раскрытые ветки не сжимаются и не наезжают друг на друга; при нехватке высоты меню прокручивается */
+.sidebar{overflow-y:auto;overscroll-behavior:contain}
+.sidebar>*{flex-shrink:0}
+.sidebar .component-tree{flex-shrink:0}
+
+/* «Общие токены» и «Компоненты · 2» — один стиль подписи с иконкой */
+.sidebar .foundation-link,.sidebar a.nav-label{display:flex;align-items:center;gap:6px;font-size:10px;text-transform:uppercase;font-weight:650;letter-spacing:1.3px;color:var(--muted);padding:0 14px;text-decoration:none}
+.sidebar .foundation-link{margin:0 0 22px}
+.sidebar .foundation-link:hover,.sidebar a.nav-label:hover{color:var(--blue)}
+.nav-icon{color:inherit;font-size:12px;letter-spacing:0;line-height:1;width:12px;text-align:center}
+
+/* Активный пункт «Общие токены» / «Компоненты · N» — как выбранная ветка компонента */
+.sidebar .foundation-link,.sidebar a.nav-label{padding:10px 14px;border-radius:6px}
+.sidebar .foundation-link{margin:0 0 8px}
+.sidebar a.nav-label{margin-bottom:8px}
+.sidebar .foundation-link[aria-current="page"],.sidebar a.nav-label[aria-current="page"]{background:var(--blue-wash);color:var(--blue)}
+.sidebar .foundation-link,.sidebar a.nav-label{font-size:12px;line-height:16px}
+.sidebar .nav-icon{font-size:14px;width:14px}
+/* Ветки компонентов в меню: 12 px, стрелка цвета текста (у активной ветки — синяя вместе с текстом) */
+.sidebar .component-tree>summary{font-size:12px;line-height:16px}
+.sidebar .component-tree>summary:after{color:inherit}
+
+.sidebar{padding:28px 16px}
+
+/* Светлая тема: фон меню и областей примеров чуть светлее (#f3f4f7 → #f7f8fa) */
+:root:not([data-theme="dark"]){--side:#f7f8fa;--panel:#f7f8fa}
+
+/* Стрелки веток меню — иконки AltaIDE/Icons/Arrow/Stroke, Size 16 (Rigth / Down) из ALTA.
+   Геометрия из SVG ALTA (копии в assets/sidebar/), цвет — цвет текста пункта */
+.sidebar .component-tree>summary:after{display:none;content:none}
+.sidebar .tree-arrow{display:block;flex-shrink:0;width:16px;height:16px;margin-left:auto;fill:currentColor;stroke:none}
+.sidebar .tree-arrow--down,.sidebar .component-tree[open] .tree-arrow--right{display:none}
+.sidebar .component-tree[open] .tree-arrow--down{display:block}
+
+/* Имя ветки — ссылка на компонент, стрелка — переключатель ветки */
+.sidebar .component-name{flex:1;color:inherit;text-decoration:none}
+.sidebar .component-name:hover{color:var(--blue)}
+.sidebar .component-tree>summary{cursor:default}
+.sidebar .tree-arrow{cursor:pointer}
+
+/* Главная: превью компонентов ALTA IDE во фрейме (реальные компоненты из репозитория ALTA) */
+.catalog-preview{height:132px;min-height:0;box-sizing:border-box}
+.catalog-preview--frame{position:relative;padding:0;overflow:hidden}
+.catalog-preview--frame iframe{display:block;width:100%;height:100%;border:0;background:transparent;pointer-events:none}
+.catalog-preview--wide{justify-content:flex-start}
+.catalog-preview--wide iframe{position:absolute;inset:0}
+.preview-chip{position:absolute;top:4px;right:8px;z-index:1;font-size:10px;line-height:16px;color:var(--muted);background:var(--page);border:1px solid var(--line);border-radius:4px;padding:0 6px}
+.intro{max-width:none}
+
+/* Главная: второй раздел «Общие токены» того же уровня, что «Компоненты» */
+.catalog-section{padding-top:56px}
+.title-line .catalog-section-title{font-size:40px;line-height:1.15;letter-spacing:-1.4px;margin:0}
+.catalog-card .catalog-card-title{font-size:22px;line-height:1.35;letter-spacing:-.45px;margin:0}
+.catalog-preview--empty{background:var(--panel)}
+@media(max-width:760px){.title-line .catalog-section-title{font-size:34px}.catalog-section{padding-top:40px}}
+.catalog-card .catalog-card-title,.title-line .catalog-section-title{font-weight:700}
+
+/* Заголовки разделов главной («Компоненты», «Общие токены») — чуть меньше */
+.catalog-title h1,.catalog-title .catalog-section-title{font-size:32px;letter-spacing:-1px}
+@media(max-width:760px){.catalog-title h1,.catalog-title .catalog-section-title{font-size:28px}}
+
+/* Превью карточек «Общие токены» */
+.catalog-preview--foundation{padding:16px 20px}
+.fp{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.fp-logos{flex-direction:column;gap:18px;color:var(--ink)}
+.fp-logos .logo-alta{width:139px;height:21px}
+.fp-logos .logo-conf{width:169px;height:14px}
+.fp-colors{display:grid;grid-template-columns:repeat(3,auto);gap:14px 24px;justify-content:center;align-content:center}
+.fc-item{display:flex;align-items:center;gap:8px}
+.fc-swatch{width:24px;height:24px;border-radius:5px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);flex-shrink:0}
+.fc-name{display:flex;flex-direction:column;font-size:11px;line-height:14px;color:var(--ink)}
+.fc-name span{font-size:10px;color:var(--muted)}
+.fp-type{gap:48px}
+.ft{display:flex;flex-direction:column;align-items:center;gap:2px}
+.ft-sample{font-size:40px;line-height:48px;color:var(--ink)}
+.ft-rubik{font-family:"Rubik",sans-serif}
+.ft-mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.ft-name{font-size:12px;line-height:16px;color:var(--ink)}
+.ft-note{font-size:10px;line-height:14px;color:var(--muted)}
+.fp-icons{display:grid;grid-template-columns:repeat(6,20px);gap:18px 26px;justify-content:center;align-content:center}
+.fi-box{width:20px;height:20px;display:flex;align-items:center;justify-content:center}
+.fi-box svg{display:block;max-width:20px;max-height:20px}
+@media(max-width:420px){.fp-colors{grid-template-columns:repeat(2,auto)}.fp-icons{gap:14px 18px}}
+/* Общее правило svg на сайте (контурные иконки 17 px) не должно влиять на SVG из ALTA */
+.fp svg{stroke:none;stroke-width:0;vertical-align:top}
+.fp-icons .fi{width:auto;height:auto}
+
+/* Главная: первый раздел без верхнего отступа; заголовки обоих разделов одного размера */
+.catalog-section--first{padding-top:0}
+.catalog-title h1{font-weight:700}
+
+#foundations,#components{scroll-margin-top:72px}
+/* Превью в карточках — только картинка: элементы внутри не реагируют на наведение и клики */
+.catalog-preview *{pointer-events:none}
+
+/* Компоненты без страницы в меню: та же строка, без стрелки и без перехода */
+.sidebar .component-tree--soon .component-link{cursor:default}
+.sidebar .component-tree--soon .component-link:hover,.sidebar .component-tree--soon .component-name:hover{color:inherit}
+.sidebar .component-tree--soon .component-link{font-size:12px;line-height:16px}
+
+/* Страница Dropdown: компоненты ALTA на странице каталога */
+.dd-nohint .fn:first-child{height:auto!important}
+.demo-stage--dropdown{min-height:300px;align-items:flex-start;padding-top:72px;position:relative}
+.demo-stage--dropdown .alta-component{position:relative;z-index:2}
+.dd-states .alta-component{max-width:100%}
+.state--empty{background:transparent}
+.usage-card .alta-component{margin-bottom:15px}
+.usage-card .alta-component,.dd-states .alta-component{width:max-content}
+/* Список Dropdown: название пункта в Figma шириной под «One»; в примере подстраивается под текст */
+.alta-popup .fn-text{white-space:nowrap}
+/* Список Dropdown — как в компоненте Dropdown Open: названия и описания столбцами */
+.alta-popup .fn>.fn-text:first-child:not(:only-child){width:auto!important;min-width:104px;flex:none!important}
+/* Меню: ширина 248px, разделы «Основы» и «Компоненты IDE» раскрываются стрелкой */
+@media(min-width:761px){.sidebar{width:248px;box-sizing:border-box}.workspace{margin-right:248px}}
+.sidebar .nav-group{margin:0 0 12px}
+.sidebar .nav-group-head{display:flex;align-items:center;gap:6px;list-style:none;cursor:default;padding:10px 13px;border-radius:6px;color:var(--muted)}
+.sidebar .nav-group-head::-webkit-details-marker{display:none}
+.sidebar .nav-group-head::marker{content:''}
+.sidebar .nav-head{flex:1;display:flex;align-items:center;gap:6px;font-size:11px;line-height:16px;text-transform:uppercase;font-weight:650;letter-spacing:1.3px;color:inherit;text-decoration:none}
+.sidebar .nav-group-head:hover .nav-head{color:var(--blue)}
+.sidebar .nav-group-head:has(.nav-head[aria-current="page"]){background:var(--blue-wash);color:var(--blue)}
+.sidebar .nav-group>summary .tree-arrow--right{display:block}
+.sidebar .nav-group>summary .tree-arrow--down{display:none}
+.sidebar .nav-group[open]>summary .tree-arrow--right{display:none}
+.sidebar .nav-group[open]>summary .tree-arrow--down{display:block}
+.sidebar .nav-group-list{padding-top:4px}
+.sidebar .nav-item{display:block;padding:10px 13px;border-radius:6px;font-size:12px;line-height:16px;color:var(--muted);text-decoration:none;margin-bottom:9px}
+.sidebar .nav-item:hover{color:var(--blue)}
+.sidebar .nav-group{border-top:0;padding-top:0;margin-top:0}
+.sidebar .nav-group>summary:after{display:none;content:none}
+.sidebar .nav-head{padding:0;margin:0;background:none!important;border-radius:0}
+.sidebar .nav-item{font-weight:600}
+.sidebar .nav-group-head .tree-arrow{cursor:pointer}
+.sidebar .nav-empty{margin:0 0 9px;padding:10px 13px;font-size:12px;line-height:16px;color:var(--muted);opacity:.7}
+@media(max-width:760px){.mobile-catalog{flex-wrap:wrap}}
+/* Страницы компонентов на узком экране: поля фиксированной ширины не шире карточки */
+@media(max-width:760px){.cp-stage,.cp-states .state,.usage-card{min-width:0;overflow:hidden}.cp-stage .alta-view>.fn,.cp-stage .alta-control>.fn,.cp-states .alta-view>.fn,.cp-states .alta-control>.fn,.usage-card .alta-view>.fn,.usage-card .alta-control>.fn{max-width:100%!important}}
+#cfc{scroll-margin-top:72px}
+/* Розовые метки компонентов ALTA в каталоге не показываем */
+.alta-component::after,.alta-widget::after,.alta-control::after,.alta-navigation::after,.cfc-component::after,.ace-component::after,.shell-component::after,.alta-button::after,.alta-bit::after,.alta-bits-group::after,.alta-bit-mask-picker::after{content:none!important;display:none!important}
+/* Пояснение под компонентом в карточках использования — с отступом от компонента */
+.usage-card>p{padding-top:16px}
+.usage-card>p:not(:last-child){padding-bottom:0}
+/* Варианты использования: один пример — на всю ширину; пункты конкретики списком */
+.usage--single{grid-template-columns:1fr}
+.usage-example{margin-bottom:0}
+.usage-points{margin:12px 0 0;padding-left:18px;font-size:12px;line-height:18px;color:var(--muted)}
+.usage-points li+li{margin-top:6px}
+.usage-text{font-size:13px;color:var(--ink)}
+.usage-stack{display:flex;flex-direction:column;gap:10px}
+.cp-row--tight{gap:0}
+.usage-card>.usage-points{margin-top:8px}
+.usage-card>p{margin-top:0}
+.usage-frame{display:block;width:100%;border:0;border-radius:7px;background:var(--panel)}
+
+/* Every preview cell has its own boundary, including unused cells in the last row. */
+.states{gap:1px;background:var(--line)}
+.states>.state{border:0!important;background:var(--page);grid-row:auto!important;grid-column:auto!important}
+.states>.state--empty{pointer-events:none}
+/* Subsection titles must keep distance from the preceding sample grid or table. */
+main section>.states+h3,
+main section>.source-table-wrap+h3,
+main section>.params+h3{margin-top:20px;margin-bottom:10px}
+
+/* Фрагменты макетов в вариантах использования */
+.usage-shot{margin:0}
+.usage-shot img{display:block;max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line)}
+.usage-shot figcaption{margin-top:6px;font-size:11px;color:var(--muted)}
+.states+.section-desc,.states+p{margin-top:16px}
+.nav-item[aria-current="page"]{color:var(--blue);background:var(--blue-wash)}
+
+/* section captions removed 2026-11-10: keep space between a section heading and its content */
+.section-heading{margin-bottom:20px}
+
+/* Preview stage (option A, 2026-11-10): component sits on its own surface, captions muted */
+:root{--stage:#f4f5f7;--stage-line:#e3e5ea}
+:root[data-theme=dark]{--stage:#19191b;--stage-line:#2e3035}
+.state-head{margin-bottom:10px}
+.state-head h3,.usage-card>h3{font-size:12px;line-height:16px;font-weight:500;color:var(--muted);letter-spacing:.02em;margin:0 0 10px}
+.state>.stage,.usage-example{background:var(--stage);border:1px solid var(--stage-line);border-radius:8px;padding:24px 20px;display:flex;justify-content:center;align-items:center;min-height:112px;box-sizing:border-box}
+.usage-example{margin-bottom:12px}
+.demo-stage{background:var(--stage);border:1px solid var(--stage-line);border-radius:8px}
+.state>.stage>.alta-component,.usage-example>.alta-component{max-width:100%;min-width:0}
+.state>.stage{overflow-x:auto}
+.state>.stage,.usage-example{justify-content:safe center}
+/* Usage fragments: pieces of IDE interface built from live components (2026-11-10) */
+.usage-ui{justify-content:safe center;padding:24px}
+.ui-frag{background:var(--canvas-background);border:1px solid var(--separation-color);border-radius:6px;padding:16px 20px;font:400 14px/20px "Rubik",sans-serif;color:var(--labels-content);display:flex;flex-direction:column;gap:12px;box-sizing:border-box;max-width:100%;overflow:hidden;position:relative}
+.ui-frag [data-frag],.ui-frag [data-frag] *{pointer-events:none}
+.ui-row{display:flex;gap:16px;align-items:flex-end;flex-wrap:nowrap}
+.ui-row--center{align-items:center}
+.ui-grid{display:grid;grid-template-columns:max-content max-content;column-gap:32px;row-gap:10px;align-items:center}
+.ui-muted{color:var(--labels-contentadditional)}
+.ui-ok{color:#5da35b}
+.ui-bar{display:flex;align-items:center;gap:12px;background:var(--toolbar-background);margin:-16px -20px 4px;padding:6px 12px;border-bottom:1px solid var(--separation-color)}
+.ui-pop{background:var(--contextmenu-background);border:1px solid var(--contextmenu-bordercolor);border-radius:4px;box-shadow:0 4px 16px rgba(0,0,0,.18);padding:12px 16px;display:flex;flex-direction:column;gap:10px}
+.ui-pop__foot{display:flex;justify-content:flex-end;gap:12px;border-top:1px solid var(--separation-color);margin:4px -16px 0;padding:12px 16px 0}
+.ui-cell{padding:6px 12px;border-bottom:1px solid var(--separation-color);white-space:nowrap}
+.ui-anchor{position:relative;display:inline-flex;flex-direction:column;gap:6px;align-items:flex-start}
+.ui-frag .fn-text:not(textarea):not([data-component^="AltaIDE_InputNumber"] [data-edit-slot]):not([data-component^="AltaIDE_Dropdown"] .fn-text:not([data-rt])):not([data-shell^="AltaIDE_ContextMenu"] *),.ui-frag [data-text-prop]:not([data-shell^="AltaIDE_ContextMenu"] *),.ui-frag [data-source-text]:not(textarea):not([data-shell^="AltaIDE_ContextMenu"] *),.ui-frag .alta-button__label{white-space:nowrap;width:max-content!important;min-width:0;max-width:none!important;flex:none}
+.ui-frag .shell-node:has(>[data-text-prop]):not([data-shell^="AltaIDE_ContextMenu"] *),.ui-frag .fn:has(>.fn-text:not(textarea):not([data-component^="AltaIDE_InputNumber"] [data-edit-slot]):not([data-component^="AltaIDE_Dropdown"] .fn-text:not([data-rt]))){width:auto!important}
+.ui-field{display:flex;flex-direction:column;gap:4px}
+.ui-field .ds-input{width:220px}
+.ui-frag .fn:has(>.fn-text:not(textarea):not([data-component^="AltaIDE_InputNumber"] [data-edit-slot]):not([data-component^="AltaIDE_Dropdown"] .fn-text:not([data-rt]))){width:auto!important;height:auto!important}
+.ui-frag .fn:has(>.fn-text:not(textarea):not([data-component^="AltaIDE_InputNumber"] [data-edit-slot]):not([data-component^="AltaIDE_Dropdown"] .fn-text:not([data-rt])))>.fn-text{position:relative!important;left:auto!important;top:auto!important;right:auto!important;bottom:auto!important;transform:none!important}
+.ui-frag .shell-component[data-shell="AltaIDE_Subtitle"]{width:100%}.ui-frag .shell-component[data-shell="AltaIDE_Subtitle"]>.shell-node{width:100%!important;box-sizing:border-box}
+.ui-frag [data-widget="AltaIDE_Tab"] .fn{width:auto!important}
+.ui-frag [data-widget="AltaIDE_Tab"] [data-component="AltaIDE_Badge"]{margin-left:4px}
+.ui-frag [data-shell="AltaIDE_Separator"] .shell-node{width:100%!important}
+.ui-frag [data-shell="AltaIDE_Separator"]{display:block!important;width:100%}
+.ui-frag .alta-component,.ui-frag .shell-component,.ui-frag .alta-widget,.ui-frag .alta-control{margin:0!important}
+.ui-h{font:400 14px/20px "Rubik",sans-serif;color:var(--labels-content)}
+.usage:has(.usage-ui){grid-template-columns:minmax(0,1fr)!important}
+.usage-ui{overflow:hidden;min-width:0}
+.ui-frag{min-width:min(100%,520px)}
+.ui-hover{position:relative;display:inline-block}
+.ui-hover .ui-cursor{position:absolute;left:62%;top:55%;width:16px;height:22px;z-index:3;pointer-events:none}
+.ui-hover .ui-tip{position:absolute;left:calc(62% + 8px);top:calc(100% + 14px);z-index:2;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+.ui-frag .ds-input{margin:0!important}
+.ui-frag [data-shell="AltaIDE_Subtitle"]>.shell-node{padding-left:0!important;padding-right:0!important}
+.usage-shot{margin:0;display:flex;flex-direction:column;align-items:center;gap:8px;max-width:100%}
+.usage-shot img{display:block;width:auto;max-width:100%;height:auto;border-radius:6px;border:1px solid var(--stage-line)}
+.usage-shot figcaption{font-size:12px;line-height:16px;color:var(--muted)}
+.usage:has(.usage-shot){grid-template-columns:minmax(0,1fr)!important}
+.usage-shot img{max-width:min(100%,760px)}
+.ui-frag:has(>.ui-tight){min-width:0;padding:0;overflow:hidden}.ui-tight{display:flex;align-items:center;background:var(--toolbar-background)}
+.usage-example.usage-ui,.usage-example:has(>.usage-shot){background:none!important;border:0!important;padding:0!important;min-height:0!important;justify-content:flex-start!important}
+.usage-example:has(>.usage-shot) .usage-shot{align-items:flex-start}
+.usage-src{color:var(--muted)}
+.ui-frag:has(>.ui-bare){background:none!important;border:0!important;padding:0!important;min-width:0!important;box-shadow:none!important}
+/* Double spacing between page sections 01, 02, 03… (2026-11-10) */
+main section{padding-top:60px}
+@media (max-width:700px){main section{padding-top:40px}}
+.ui-frag [data-widget="AltaIDE_SegmentControl"] button.fn{width:auto!important;padding-left:10px!important;padding-right:10px!important}
+.usage-cap{font-size:12px;line-height:16px;font-weight:500;color:var(--muted);letter-spacing:.02em;margin:0 0 10px}
+.usage-cap .usage-src{font-weight:400}
+.demo{overflow:hidden}
+.demo>.demo-stage{border:0!important;border-radius:0!important;border-bottom:1px solid var(--stage-line)!important}
+.ui-cell{display:flex;align-items:center;box-sizing:border-box;min-height:32px}
+.usage-example:has(.usage-shot):not(:has(>.usage-shot)){flex-direction:column;align-items:flex-start;gap:16px}
+.states>.state--empty{display:none!important}.states>.state--filler{background:var(--page);pointer-events:none}
+.ui-frag--fit{min-width:0!important;width:max-content;max-width:100%}
+.ui-frag--fit .ui-grid{grid-template-columns:7.5em max-content}
+.alta-widget[data-widget="AltaIDE_Segment"] button.fn{width:auto!important}.alta-widget[data-widget="AltaIDE_Segment"] .fn-text{width:auto!important;white-space:nowrap}
+.alta-component .fn-asset:has(>img:only-child){padding:0!important}
+.ui-frag [data-component$="Label"] .alta-view>.fn>.fn-text:first-child{min-width:var(--lbl-w,0)}
+.ui-grid--top{align-items:start!important}.ui-grid--top>.alta-component[data-component="AltaIDE_Label"]{padding-top:6px}
+.source-sample .alta-navigation[data-navigation="AltaIDE_Banner"]{display:block;width:600px;max-width:100%}
+.source-sample [data-navigation="AltaIDE_Banner"] [data-part="Frame 1"]{flex:1 1 0;min-width:0;width:auto;align-items:flex-start}
+/* Menu Link hover inside interactive Menu Bar / Top Bar demos — values from the AltaIDE_MenuLink Hover variant */
+.shell-component:not([data-static]) [data-part="AltaIDE/MenuLink"]{cursor:default}
+.shell-component:not([data-static]) [data-part="AltaIDE/MenuLink"]:hover{background:rgba(255,255,255,.1)}
+.shell-component:not([data-static]) [data-part="AltaIDE/MenuLink"]:hover>span{color:var(--shell-menulink-hover)}
+/* stages whose content is wider than the card: keep the left edge visible */
+.stage-overflow{justify-content:flex-start!important}
+.stage-overflow>*{flex:none!important;margin-left:0!important}
+/* Toolbar command hover — HoverAndPressed variant of AltaIDE/Icons/Toolbars/TB_Top: Dark/Gray/14, Light/White */
+.shell-component:not([data-static]) [data-shell-action="tool"]{cursor:default}
+.shell-component:not([data-static]) [data-shell-action="tool"]:hover{background:var(--altaide-dark-gray-14,#26282c)}
+html[data-theme="light"] .shell-component:not([data-static]) [data-shell-action="tool"]:hover{background:var(--altaide-light-white,#fff)}

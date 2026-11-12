@@ -1,0 +1,54 @@
+{
+  "repository": "Nastya-nikki/ALTA",
+  "commit": "83ffda797adb1da279a21269402c2b1a7e08ef0b",
+  "component": "Components/AltaIDE_TooltipHelp",
+  "sourceReadAt": "2026-10-30",
+  "documentationReadAt": "2026-11-05",
+  "variants": [
+    {
+      "Type": "Command"
+    },
+    {
+      "Type": "Help"
+    }
+  ],
+  "properties": {
+    "Show Shortcut#187360:3": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Show Link#187360:6": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Show Header#187360:9": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Show Text#187360:12": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Header#187360:18": {
+      "type": "TEXT",
+      "defaultValue": "Имя команды"
+    },
+    "Text#187360:21": {
+      "type": "TEXT",
+      "defaultValue": "Объясните поведение, которое непонятно из названия параметра или действия."
+    },
+    "Command#187360:24": {
+      "type": "TEXT",
+      "defaultValue": "Имя команды"
+    },
+    "Type": {
+      "type": "VARIANT",
+      "defaultValue": "Command",
+      "variantOptions": [
+        "Help",
+        "Command"
+      ]
+    }
+  },
+  "note": "No release version is asserted; unsupported state combinations are not created."
+}

@@ -1,0 +1,58 @@
+{
+  "repository": "Nastya-nikki/ALTA",
+  "commit": "83ffda797adb1da279a21269402c2b1a7e08ef0b",
+  "component": "Components/AltaIDE_Banner",
+  "sourceReadAt": "2026-10-31",
+  "documentationReadAt": "2026-11-05",
+  "variants": [
+    {
+      "State": "Info"
+    },
+    {
+      "State": "Success"
+    },
+    {
+      "State": "Warning"
+    },
+    {
+      "State": "Error"
+    }
+  ],
+  "properties": {
+    "Text#185521:164": {
+      "type": "TEXT",
+      "defaultValue": "Text"
+    },
+    "Action A#185521:173": {
+      "type": "TEXT",
+      "defaultValue": "Action A"
+    },
+    "Action B#185521:182": {
+      "type": "TEXT",
+      "defaultValue": "Action B"
+    },
+    "Link#197301:0": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+    },
+    "Head#200516:0": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+    },
+    "Head Text#200516:9": {
+      "type": "TEXT",
+      "defaultValue": "Head"
+    },
+    "State": {
+      "type": "VARIANT",
+      "defaultValue": "Info",
+      "variantOptions": [
+        "Info",
+        "Success",
+        "Warning",
+        "Error"
+      ]
+    }
+  },
+  "note": "No release version is asserted; unsupported state combinations are not created."
+}

@@ -1,0 +1,178 @@
+{
+  "repository": "Nastya-nikki/ALTA",
+  "commit": "83ffda797adb1da279a21269402c2b1a7e08ef0b",
+  "component": "Components/AltaIDE_TooltipEditor",
+  "sourceReadAt": "2026-10-30",
+  "documentationReadAt": "2026-11-05",
+  "variants": [
+    {
+      "Theme": "Dark",
+      "Type": "Error",
+      "Arrow": "Up",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Info",
+      "Arrow": "Up",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Warning",
+      "Arrow": "Up",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Success",
+      "Arrow": "Up",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Error",
+      "Arrow": "Right",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Info",
+      "Arrow": "Right",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Warning",
+      "Arrow": "Right",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Success",
+      "Arrow": "Right",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Error",
+      "Arrow": "Down",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Info",
+      "Arrow": "Down",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Warning",
+      "Arrow": "Down",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Success",
+      "Arrow": "Down",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Error",
+      "Arrow": "Left",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Info",
+      "Arrow": "Left",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Warning",
+      "Arrow": "Left",
+      "Size": "L"
+    },
+    {
+      "Theme": "Dark",
+      "Type": "Success",
+      "Arrow": "Left",
+      "Size": "L"
+    }
+  ],
+  "properties": {
+    "Menu#185541:228": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+    },
+    "Header#185541:261": {
+      "type": "TEXT",
+      "defaultValue": "Header"
+    },
+    "Text#185541:294": {
+      "type": "TEXT",
+      "defaultValue": "Text"
+    },
+    "Hint#185541:327": {
+      "type": "TEXT",
+      "defaultValue": "Hint"
+    },
+    "Show Header#185543:0": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Show Text#185543:33": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Show Hint#185543:66": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Show Link#189743:0": {
+      "type": "BOOLEAN",
+      "defaultValue": false
+    },
+    "Link#189743:33": {
+      "type": "TEXT",
+      "defaultValue": "Link"
+    },
+    "Theme": {
+      "type": "VARIANT",
+      "defaultValue": "Dark",
+      "variantOptions": [
+        "Dark"
+      ]
+    },
+    "Type": {
+      "type": "VARIANT",
+      "defaultValue": "Info",
+      "variantOptions": [
+        "Error",
+        "Info",
+        "Success",
+        "Warning"
+      ]
+    },
+    "Arrow": {
+      "type": "VARIANT",
+      "defaultValue": "Up",
+      "variantOptions": [
+        "Down",
+        "Left",
+        "Right",
+        "Up"
+      ]
+    },
+    "Size": {
+      "type": "VARIANT",
+      "defaultValue": "L",
+      "variantOptions": [
+        "L"
+      ]
+    }
+  },
+  "note": "No release version is asserted; unsupported state combinations are not created."
+}

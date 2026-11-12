@@ -1,0 +1,28 @@
+/* Token-based adapter. Original SVGs remain in assets/ for comparison. */
+.toggle-control {
+  width: var(--toggle-width);
+  height: var(--toggle-height);
+  border-radius: var(--toggle-radius);
+  position: relative;
+  background: var(--toggle-background-active-false);
+  padding: 0;
+  border: 0;
+  flex-shrink: 0;
+}
+.toggle-control::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  width: var(--toggle-thumb-size);
+  height: var(--toggle-thumb-size);
+  border-radius: var(--toggle-radius);
+  border: var(--toggle-border) solid var(--toggle-circle-border-border);
+  background: var(--toggle-circle-fill);
+}
+.toggle-control[aria-checked="true"] { background: var(--toggle-background-active-true); }
+.toggle-control[aria-checked="true"]::before { left: calc(var(--toggle-width) - var(--toggle-thumb-size)); }
+.toggle-control:disabled { background: var(--toggle-background-disabled); opacity: 1; }
+.toggle-control img { display: none; }
+.toggle-line { gap: var(--space-control-gap); }

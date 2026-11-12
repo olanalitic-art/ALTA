@@ -1,0 +1,756 @@
+{
+  "browser": {
+    "results": [
+      {
+        "key": "button-primary",
+        "theme": "light",
+        "sections": [
+          "example",
+          "states",
+          "variants",
+          "usage",
+          "versions",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [
+          "Обычное",
+          "Наведение",
+          "Нажатие",
+          "Загрузка",
+          "Недоступно"
+        ],
+        "overflow": false
+      },
+      {
+        "key": "button-primary",
+        "theme": "dark",
+        "sections": [
+          "example",
+          "states",
+          "variants",
+          "usage",
+          "versions",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [
+          "Обычное",
+          "Наведение",
+          "Нажатие",
+          "Загрузка",
+          "Недоступно"
+        ],
+        "overflow": false
+      },
+      {
+        "key": "button-primary",
+        "mobile": true,
+        "overflow": false,
+        "panels": false
+      },
+      {
+        "key": "button-secondary",
+        "theme": "light",
+        "sections": [
+          "example",
+          "states",
+          "variants",
+          "usage",
+          "versions",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [
+          "Обычное",
+          "Наведение",
+          "Нажатие",
+          "Загрузка",
+          "Недоступно"
+        ],
+        "overflow": false
+      },
+      {
+        "key": "button-secondary",
+        "theme": "dark",
+        "sections": [
+          "example",
+          "states",
+          "variants",
+          "usage",
+          "versions",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [
+          "Обычное",
+          "Наведение",
+          "Нажатие",
+          "Загрузка",
+          "Недоступно"
+        ],
+        "overflow": false
+      },
+      {
+        "key": "button-secondary",
+        "mobile": true,
+        "overflow": false,
+        "panels": false
+      },
+      {
+        "key": "hints",
+        "theme": "light",
+        "sections": [
+          "example",
+          "usage",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [],
+        "overflow": false
+      },
+      {
+        "key": "hints",
+        "theme": "dark",
+        "sections": [
+          "example",
+          "usage",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [],
+        "overflow": false
+      },
+      {
+        "key": "hints",
+        "mobile": true,
+        "overflow": false,
+        "panels": false
+      },
+      {
+        "key": "radio",
+        "theme": "light",
+        "sections": [
+          "example",
+          "states",
+          "usage",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [
+          "Не выбран",
+          "Выбран",
+          "Наведение",
+          "Фокус",
+          "Ошибка",
+          "Недоступно"
+        ],
+        "overflow": false
+      },
+      {
+        "key": "radio",
+        "theme": "dark",
+        "sections": [
+          "example",
+          "states",
+          "usage",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [
+          "Не выбран",
+          "Выбран",
+          "Наведение",
+          "Фокус",
+          "Ошибка",
+          "Недоступно"
+        ],
+        "overflow": false
+      },
+      {
+        "key": "radio",
+        "mobile": true,
+        "overflow": false,
+        "panels": false
+      },
+      {
+        "key": "tooltip-help",
+        "theme": "light",
+        "sections": [
+          "example",
+          "variants",
+          "usage",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [],
+        "overflow": false
+      },
+      {
+        "key": "tooltip-help",
+        "theme": "dark",
+        "sections": [
+          "example",
+          "variants",
+          "usage",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [],
+        "overflow": false
+      },
+      {
+        "key": "tooltip-help",
+        "mobile": true,
+        "overflow": false,
+        "panels": false
+      },
+      {
+        "key": "tooltip-editor",
+        "theme": "light",
+        "sections": [
+          "example",
+          "variants",
+          "usage",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [],
+        "overflow": false
+      },
+      {
+        "key": "tooltip-editor",
+        "theme": "dark",
+        "sections": [
+          "example",
+          "variants",
+          "usage",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [],
+        "overflow": false
+      },
+      {
+        "key": "tooltip-editor",
+        "mobile": true,
+        "overflow": false,
+        "panels": false
+      },
+      {
+        "key": "banner",
+        "theme": "light",
+        "sections": [
+          "example",
+          "states",
+          "usage",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [
+          "Информация",
+          "Успех",
+          "Предупреждение",
+          "Ошибка"
+        ],
+        "overflow": false
+      },
+      {
+        "key": "banner",
+        "theme": "dark",
+        "sections": [
+          "example",
+          "states",
+          "usage",
+          "parameters"
+        ],
+        "broken": [],
+        "states": [
+          "Информация",
+          "Успех",
+          "Предупреждение",
+          "Ошибка"
+        ],
+        "overflow": false
+      },
+      {
+        "key": "banner",
+        "mobile": true,
+        "overflow": false,
+        "panels": false
+      }
+    ],
+    "errors": []
+  },
+  "interactive": {
+    "report": [
+      {
+        "key": "button-primary",
+        "options": 3,
+        "reset": true
+      },
+      {
+        "key": "button-secondary",
+        "options": 3,
+        "reset": true
+      },
+      {
+        "key": "radio",
+        "options": 5,
+        "reset": true
+      },
+      {
+        "key": "tooltip-help",
+        "options": 2,
+        "reset": true
+      },
+      {
+        "key": "tooltip-editor",
+        "options": 16,
+        "reset": true
+      },
+      {
+        "key": "banner",
+        "options": 4,
+        "reset": true
+      }
+    ],
+    "errors": []
+  },
+  "checkedAt": "2026-11-05",
+  "layoutAudit": {
+    "pages": 23,
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "report": [
+      {
+        "key": "badge",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "badge",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "badge",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "banner",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 3
+      },
+      {
+        "key": "banner",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 3
+      },
+      {
+        "key": "banner",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 3
+      },
+      {
+        "key": "button-primary",
+        "width": 1440,
+        "gridCount": 3,
+        "tableCount": 2
+      },
+      {
+        "key": "button-primary",
+        "width": 1024,
+        "gridCount": 3,
+        "tableCount": 2
+      },
+      {
+        "key": "button-primary",
+        "width": 390,
+        "gridCount": 3,
+        "tableCount": 2
+      },
+      {
+        "key": "button-secondary",
+        "width": 1440,
+        "gridCount": 3,
+        "tableCount": 2
+      },
+      {
+        "key": "button-secondary",
+        "width": 1024,
+        "gridCount": 3,
+        "tableCount": 2
+      },
+      {
+        "key": "button-secondary",
+        "width": 390,
+        "gridCount": 3,
+        "tableCount": 2
+      },
+      {
+        "key": "checkbox",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "checkbox",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "checkbox",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "combobox",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "combobox",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "combobox",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "comments",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "comments",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "comments",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "dropdown",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "dropdown",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "dropdown",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "dropdown-open",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "dropdown-open",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "dropdown-open",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "hints",
+        "width": 1440,
+        "gridCount": 0,
+        "tableCount": 3
+      },
+      {
+        "key": "hints",
+        "width": 1024,
+        "gridCount": 0,
+        "tableCount": 3
+      },
+      {
+        "key": "hints",
+        "width": 390,
+        "gridCount": 0,
+        "tableCount": 3
+      },
+      {
+        "key": "input",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "input",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "input",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "input-number",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "input-number",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "input-number",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "link",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "link",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "link",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "node-and",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "node-and",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "node-and",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "pagination",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "pagination",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "pagination",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "radio",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 3
+      },
+      {
+        "key": "radio",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 3
+      },
+      {
+        "key": "radio",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 3
+      },
+      {
+        "key": "search",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "search",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "search",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "shortcut",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "shortcut",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "shortcut",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "tab",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "tab",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "tab",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "textarea",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "textarea",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "textarea",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "toggle",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "toggle",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "toggle",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 2
+      },
+      {
+        "key": "tooltip-editor",
+        "width": 1440,
+        "gridCount": 2,
+        "tableCount": 3
+      },
+      {
+        "key": "tooltip-editor",
+        "width": 1024,
+        "gridCount": 2,
+        "tableCount": 3
+      },
+      {
+        "key": "tooltip-editor",
+        "width": 390,
+        "gridCount": 2,
+        "tableCount": 3
+      },
+      {
+        "key": "tooltip-help",
+        "width": 1440,
+        "gridCount": 1,
+        "tableCount": 3
+      },
+      {
+        "key": "tooltip-help",
+        "width": 1024,
+        "gridCount": 1,
+        "tableCount": 3
+      },
+      {
+        "key": "tooltip-help",
+        "width": 390,
+        "gridCount": 1,
+        "tableCount": 3
+      }
+    ],
+    "failures": [],
+    "errors": []
+  },
+  "segmentPreview": {
+    "count": 1,
+    "activeCount": 1,
+    "catalogueOrder": [
+      "Segment",
+      "Segment Control",
+      "Segment Control 2"
+    ]
+  }
+}
