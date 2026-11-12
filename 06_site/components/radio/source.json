@@ -1,0 +1,73 @@
+{
+  "repository": "Nastya-nikki/ALTA",
+  "commit": "83ffda797adb1da279a21269402c2b1a7e08ef0b",
+  "component": "Components/AltaIDE_Radio",
+  "sourceReadAt": "2026-10-30",
+  "documentationReadAt": "2026-11-05",
+  "variants": [
+    {
+      "Selected": "Off",
+      "State": "Default"
+    },
+    {
+      "Selected": "Off",
+      "State": "Hover"
+    },
+    {
+      "Selected": "Off",
+      "State": "Focused"
+    },
+    {
+      "Selected": "Off",
+      "State": "Invalid"
+    },
+    {
+      "Selected": "Off",
+      "State": "Disabled"
+    },
+    {
+      "Selected": "On",
+      "State": "Active"
+    },
+    {
+      "Selected": "On",
+      "State": "Hovered"
+    },
+    {
+      "Selected": "On",
+      "State": "Focused"
+    },
+    {
+      "Selected": "On",
+      "State": "Invalid"
+    },
+    {
+      "Selected": "On",
+      "State": "Disabled"
+    }
+  ],
+  "properties": {
+    "Selected": {
+      "type": "VARIANT",
+      "defaultValue": "Off",
+      "variantOptions": [
+        "Off",
+        "On"
+      ]
+    },
+    "State": {
+      "type": "VARIANT",
+      "defaultValue": "Default",
+      "variantOptions": [
+        "Default",
+        "Hover",
+        "Focused",
+        "Invalid",
+        "Disabled",
+        "Active",
+        "Hovered"
+      ]
+    }
+  },
+  "note": "No release version is asserted; unsupported state combinations are not created."
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "component": "button-primary",
+    "source": "https://github.com/Nastya-nikki/ALTA/blob/83ffda797adb1da279a21269402c2b1a7e08ef0b/Components/01_Icons/AltaIDE_IconToolbarsTBSidebar/assets/1dffbc2a-0316-4764-bb75-0a5d150b5333.svg",
+    "variant": {
+      "Type": "Plus"
+    },
+    "node": "197038:15541"
+  },
+  {
+    "component": "button-secondary",
+    "source": "https://github.com/Nastya-nikki/ALTA/blob/83ffda797adb1da279a21269402c2b1a7e08ef0b/Components/01_Icons/AltaIDE_IconClose/assets/fb8cd228-99e7-4a97-aadc-a2873963ab47.svg",
+    "variant": {
+      "Property 1": "M"
+    },
+    "node": "183897:33853"
+  }
+]

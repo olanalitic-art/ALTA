@@ -1,0 +1,30 @@
+/* 2×2 CSS-pixel identification mark per component, including nested instances.
+   Paint only: no layout space, accessible content, or pointer target. */
+.alta-component::after,
+.alta-widget::after,
+.alta-control::after,
+.alta-navigation::after,
+.cfc-component::after,
+.ace-component::after,
+.shell-component::after,
+.alta-button::after,
+.alta-bit::after,
+.alta-bits-group::after,
+.alta-bit-mask-picker::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 2px;
+  background: #FE01FC;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Marks must not merge into lines. Code tokens inside the editor are nested
+   components that sit edge to edge: only the outer editor component is marked. */
+.ace-component .ace-component::after { display: none; }
+/* Where two marks would touch, the inner one moves to the top-left corner. */
+[data-shell="AltaIDE_Separator"]::after,
+[data-shell="AltaIDE_ModalEventsItem"] [data-component="AltaIDE_ButtonSecondary"]::after { right: auto; left: 0; }
