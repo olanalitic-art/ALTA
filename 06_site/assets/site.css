@@ -338,3 +338,4 @@ main section{padding-top:60px}
 .shell-component:not([data-static]) [data-shell-action="tool"]{cursor:default}
 .shell-component:not([data-static]) [data-shell-action="tool"]:hover{background:var(--altaide-dark-gray-14,#26282c)}
 html[data-theme="light"] .shell-component:not([data-static]) [data-shell-action="tool"]:hover{background:var(--altaide-light-white,#fff)}
+.demo-stage.cp-stage.cp-stage--bg-code-canvas{align-items:center!important}
