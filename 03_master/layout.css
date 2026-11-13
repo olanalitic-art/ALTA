@@ -90,3 +90,12 @@
 .l-command{cursor:pointer}
 .l-command:hover{background:rgba(255,255,255,.06)}
 .l-command:focus-visible{outline:1px solid #585e6c;outline-offset:-1px}
+
+/* Вкладки: AltaIDE_Tab, State = Default / Hover / Active (линия снизу) */
+.l-tab{cursor:pointer;--l-tab-line:var(--shell-tab-line-default)}
+.l-tab:hover{--l-tab-line:var(--shell-tab-line-hover,var(--tab-line-hover))}
+.l-tab[aria-selected="true"]{--l-tab-line:var(--shell-tab-line-active)}
+.l-tab.l-a8ce9ece8f93{box-shadow:inset 0 calc(-1 * var(--shell-tab-linewidth)) 0 var(--l-tab-line);border-color:var(--l-tab-line)}
+.l-tab:focus-visible{outline:1px solid #585e6c;outline-offset:-1px}
+.l-tab [data-tab-close]{cursor:pointer;border-radius:4px}
+.l-tab [data-tab-close]:hover{background:rgba(255,255,255,.08)}

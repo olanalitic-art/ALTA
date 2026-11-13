@@ -71,3 +71,28 @@
   addEventListener('keydown',e=>{if(e.key==='Escape')hide();});
   addEventListener('scroll',hide,true);
 })();
+
+/* Вкладки открытых документов: переключение, закрытие, связь с деревом */
+(()=>{
+  const list=document.querySelector('[role="tablist"]');if(!list)return;
+  const tabs=()=>[...list.querySelectorAll('[role="tab"]')];
+  const treeRow=name=>[...document.querySelectorAll('[data-shell="AltaIDE_TreeLevels"]')].find(r=>(r.querySelector('[data-source-text]')?.textContent||'').trim()===name);
+  const activate=(tab,{focus=false,syncTree=true}={})=>{
+    tabs().forEach(t=>{const on=t===tab;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;});
+    if(focus)tab.focus();
+    const slot=document.querySelector('.master-slot');if(slot)slot.setAttribute('aria-label','Содержимое: '+tab.dataset.doc);
+    if(syncTree){const row=treeRow(tab.dataset.doc);if(row){row.dataset.fromTab='1';row.click();delete row.dataset.fromTab;}}
+  };
+  const close=tab=>{const all=tabs(),i=all.indexOf(tab),wasActive=tab.getAttribute('aria-selected')==='true';tab.remove();
+    const rest=tabs();if(wasActive&&rest.length)activate(rest[Math.min(i,rest.length-1)],{focus:true});};
+  list.addEventListener('click',e=>{const tab=e.target.closest('[role="tab"]');if(!tab)return;
+    if(e.target.closest('[data-tab-close]'))close(tab);else activate(tab);});
+  list.addEventListener('auxclick',e=>{const tab=e.target.closest('[role="tab"]');if(tab&&e.button===1){e.preventDefault();close(tab);}});
+  list.addEventListener('keydown',e=>{const all=tabs(),i=all.indexOf(document.activeElement);if(i<0)return;
+    const go={ArrowRight:i+1,ArrowLeft:i-1,Home:0,End:all.length-1}[e.key];
+    if(go!==undefined){e.preventDefault();activate(all[(go+all.length)%all.length],{focus:true});}
+    else if(e.key==='Delete'){e.preventDefault();close(all[i]);}});
+  /* Клик по строке дерева переключает на её вкладку, если документ открыт */
+  document.querySelectorAll('[data-shell="AltaIDE_TreeLevels"]').forEach(row=>row.addEventListener('click',()=>{if(row.dataset.fromTab)return;
+    const name=(row.querySelector('[data-source-text]')?.textContent||'').trim(),tab=tabs().find(t=>t.dataset.doc===name);if(tab)activate(tab,{syncTree:false});}));
+})();
