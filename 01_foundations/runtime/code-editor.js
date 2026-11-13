@@ -11,8 +11,8 @@
  function reset(root){const s=live.get(root);if(!s)return;s.index=-1;s.position=0;root.style.transform='';paint(root,Number(root.dataset.initialVariant??s.def.defaultIndex));root.querySelectorAll('[data-ace]').forEach(reset);}
  function move(root,position){const s=live.get(root);s.position=Math.max(0,Math.min(100,position));root.style.transform='translateY('+s.position*0.64+'px)';root.setAttribute('aria-valuenow',String(s.position));emit(root);}
  function init(root){if(live.has(root)||!definitions.has(root.dataset.ace))return;const def=definitions.get(root.dataset.ace),index=Number(root.dataset.variant||def.defaultIndex);root.dataset.initialVariant=index;live.set(root,{def,index,position:0});setup(root);if(root.hasAttribute('data-static')||root.closest('[data-static]'))return;
- root.addEventListener('pointerenter',()=>{const p=props(root);if(def.kind==='Scroll')choose(root,{State:'Hover'});if(def.kind==='Background'&&p['Property 1']!=='Debugging')choose(root,{'Property 1':'Active'});});
- root.addEventListener('pointerleave',()=>{const p=props(root);if(def.kind==='Scroll')choose(root,{State:'Default'});if(def.kind==='Background'&&p['Property 1']!=='Debugging')choose(root,{'Property 1':'Default'});});
+ root.addEventListener('pointerenter',()=>{const p=props(root);if(def.kind==='Scroll')choose(root,{State:'Hover'});});
+ root.addEventListener('pointerleave',()=>{const p=props(root);if(def.kind==='Scroll')choose(root,{State:'Default'});});
  function activate(){const p=props(root);if(def.kind==='Number'&&!['Disable','Empty'].includes(p.State))choose(root,{State:p.State==='Active'?'Default':'Active'});if(def.kind==='Background')choose(root,{'Property 1':p['Property 1']==='Debugging'?'Default':'Debugging'});}
  function breakpoint(){const p=props(root);if(def.kind==='Number'&&['Default','Active'].includes(p.State))choose(root,{Property:p.Property==='Debuging'?'no_Debuging':'Debuging'});}
  root.addEventListener('click',e=>{if(!owned(root,e))return;activate();});root.addEventListener('dblclick',e=>{if(owned(root,e))breakpoint();});
