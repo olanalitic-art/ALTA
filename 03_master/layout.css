@@ -70,6 +70,8 @@
 .l-context-menu [data-shell="AltaIDE_ContextMenuItem"]:focus-visible > .shell-node{box-shadow:inset 0 0 0 1px #585e6c}
 .l-context-menu .alta-control .n-6a9b9b342745{width:max-content}
 [data-shell="AltaIDE_TreeLevels"][data-context-open] > .shell-node{background:var(--shell-treelevels-background-hover)!important}
+/* Наведение на строку дерева (кроме выбранной) */
+[data-shell="AltaIDE_TreeLevels"]:not([aria-selected="true"]):hover > .shell-node{background:var(--shell-treelevels-background-hover)!important}
 .l-context-menu>.layout-component{width:334px}
 /* Обёртка меню — не экземпляр компонента (только CSS-класс контейнера AltaIDE_ContextMenu), поэтому без маркера */
 .l-context-menu-root::after{display:none}
