@@ -5,7 +5,7 @@
   const nativeKinds=new Set(['Radio','RadioLabel','Toggle','ToggleLabel','Checkbox','CheckboxLabel']);
   const own=(root,selector)=>[...root.querySelectorAll(selector)].filter(el=>el.closest('.alta-control')===root);
   function state(root){return live.get(root);}
-  function register(def){definitions.set(def.name,def);document.querySelectorAll('[data-control="'+def.name+'"]').forEach(init);}
+  function register(def){const base=document.currentScript&&document.currentScript.src;if(base)(def.variants||[]).forEach(v=>{if(typeof v.html==='string')v.html=v.html.replace(/src="(?![a-z][a-z0-9+.-]*:|\/|#)([^"]+)"/gi,(_,s)=>'src="'+new URL(s,base).href+'"');});definitions.set(def.name,def);document.querySelectorAll('[data-control="'+def.name+'"]').forEach(init);}
   function config(root){const s=state(root);return s.def.variants[s.index].props;}
   function disabled(root){const p=config(root);return /^(Disabled|Disable)$/.test(p.State||'');}
   function selected(root){const p=config(root);return p.Selected==='On'||p.Checked==='True'||p.Type==='Checked'||p.Type==='Indeterminate';}
