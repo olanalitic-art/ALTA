@@ -36,19 +36,49 @@ footer{display:flex;justify-content:flex-end;gap:16px;border-top:1px solid var(-
 footer button{height:48px;padding:0 16px}
 .cancel{background:#ebecef}.apply{background:var(--blue);color:white}
 [hidden]{display:none!important}
+
+header{position:relative;z-index:2;flex-shrink:0;gap:8px}
+#theme{width:44px;height:44px;background:transparent;color:inherit;font:24px/1 Arial,sans-serif}
+#theme:hover,#theme:focus-visible{background:var(--soft)}
+:root[data-theme="dark"]{color-scheme:dark;--ink:#f0ecec;--line:#3d414b;--blue:#75a0f4;--soft:#3d414b}
+[data-theme="dark"] body{background:#191a1c}
+[data-theme="dark"] main{background:#222225}
+[data-theme="dark"] :is(header,.source,.source button,dialog,input){background:#26282c}
+[data-theme="dark"] header strong{color:#a3c2ff}
+[data-theme="dark"] .source button{border-color:#585e6c}
+[data-theme="dark"] input{border-color:#75a0f4}
+[data-theme="dark"] input:focus{box-shadow:0 0 0 2px #18315e}
+[data-theme="dark"] :is(.key.fn,.cancel){background:#585e6c}
+[data-theme="dark"] .key.on,[data-theme="dark"] .key:active{background:#1e4898;color:white}
+[data-theme="dark"] .apply{color:#15284d}
+[data-theme="dark"] main.editing::after{background:#0004}
 </style>
 <main class="editing">
-<section id="screen" inert>
-<header><strong>ALTA</strong><span>Веб-визуализация</span></header>
-<article><h1>Насосная станция</h1><div class="source"><label for="open">Название агрегата</label><button id="open"><span id="saved">Насос подачи</span><span aria-hidden="true">✎</span></button></div></article>
+<header><strong>ALTA</strong><button id="theme" type="button" aria-label="Тёмная тема" aria-pressed="false" title="Тёмная тема">☾</button><span>Веб-визуализация</span></header>
+<section id="screen" inert><article><h1>Насосная станция</h1><div class="source"><label for="open">Название агрегата</label><button id="open"><span id="saved">Насос подачи</span><span aria-hidden="true">✎</span></button></div></article>
 </section>
-<dialog open aria-modal="true" aria-labelledby="label">
+<dialog open aria-labelledby="label">
 <div class="editor"><label id="label" for="draft">Название агрегата</label><input id="draft" inputmode="none" autocomplete="off" spellcheck="false" value="Насос подачи"></div>
 <div id="keys" aria-label="Экранная клавиатура"></div>
 <footer><button class="cancel">Отмена</button><button class="apply">Применить</button></footer>
 </dialog></main>
 <script>
 const $ = selector => document.querySelector(selector);
+const themeButton = $('#theme');
+function applyTheme(dark){
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  themeButton.setAttribute('aria-pressed',String(dark));
+  themeButton.textContent = dark ? '☀' : '☾';
+  themeButton.title = dark ? 'Включить светлую тему' : 'Включить тёмную тему';
+}
+let dark = false;
+try { dark = localStorage.getItem('alta-webvis-keyboard-theme') === 'dark'; } catch {}
+applyTheme(dark);
+themeButton.onclick = () => {
+  dark = !dark;
+  applyTheme(dark);
+  try { localStorage.setItem('alta-webvis-keyboard-theme',dark ? 'dark' : 'light'); } catch {}
+};
 const draft = $('#draft'), keys = $('#keys'), panel = $('dialog');
 const layouts = {
   ru: ['йцукенгшщзхъ','фывапролджэ','ячсмитьбю'],
