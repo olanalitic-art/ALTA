@@ -14,3 +14,6 @@ body:has(.ace-component) h1{overflow-wrap:anywhere;min-width:0}
 .ace-viewport{max-width:100%;max-height:520px;overflow:auto;flex:0 1 auto;box-sizing:border-box;scrollbar-width:thin;text-align:left;line-height:0}
 .ace-viewport:has(>[data-kind="Scroll"]){height:420px;min-width:24px;display:flex;align-items:center;justify-content:center;overflow:visible}
 .stage:has(.ace-viewport){justify-content:center;align-items:center}
+
+/* Hover строки кода в канвасах: только CSS — подсветка исчезает, как только курсор уходит */
+.ace-component:not([data-static]):not([data-static] *) .ace-04f6c6ac4a6b:hover{background:var(--ace-bg-codecanvas-hover)}
