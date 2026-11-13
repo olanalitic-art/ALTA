@@ -1,0 +1,14 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ALTA · Цифровая клавиатура</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#e2e4eb}main{width:max-content;min-width:100%;min-height:100svh;display:grid;place-items:center}iframe{display:block;border:0}</style>
+<main><iframe title="Цифровая клавиатура"></iframe></main>
+<script>
+const sizes = {phone:[390,844],tablet:[768,1024],desktop:[1280,720]};
+const requested = new URLSearchParams(location.search).get('screen');
+const screenName = Object.hasOwn(sizes,requested) ? requested : 'phone';
+const [width,height] = sizes[screenName];
+const frame = document.querySelector('iframe');
+frame.width = width;
+frame.height = height;
+document.title += ' · ' + width + ' × ' + height;
+frame.src = 'keyboard-demo.html?mode=numeric&screen=' + screenName;
+</script></html>

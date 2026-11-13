@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ALTA · Текстовая клавиатура</title>
-<script>const layout = location.search.slice(1); if (["tablet", "desktop"].includes(layout)) document.documentElement.className = layout;</script>
+<script>const params = new URLSearchParams(location.search); const numeric = params.get("mode") === "numeric"; const layout = params.get("screen") || location.search.slice(1); document.documentElement.classList.toggle("numeric",numeric); if (["tablet", "desktop"].includes(layout)) document.documentElement.classList.add(layout);</script>
 <style>
 @font-face{font-family:Rubik;src:url(Rubik-Regular.ttf)}
 *{box-sizing:border-box}
@@ -68,6 +68,11 @@ header{position:relative;z-index:2;flex-shrink:0;gap:8px}
 .back{margin-left:auto;color:var(--blue);padding:10px 0;text-underline-offset:3px}
 html.desktop main { width: min(1280px, 100%); height: min(720px, 100dvh); }
 @media (hover: hover) { .key:hover { outline: 1px solid var(--blue); outline-offset: -1px; } }
+html.numeric #keys {display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:min(100%,320px);margin:auto;padding:0 14px 12px}
+html.numeric #keys .key {max-width:none}
+html.numeric:is(.desktop,.tablet) dialog {width:320px}
+html.numeric #zero {grid-column:2}
+.apply:disabled {background:var(--soft);color:var(--muted);cursor:default}
 </style>
 <main class="editing">
 <header><strong>ALTA</strong><button id="theme" type="button" aria-label="Тёмная тема" aria-pressed="false" title="Тёмная тема">☾</button><span>Веб-визуализация</span><a class="back" href="./" target="_top" aria-label="Все экраны">Экраны</a></header>
@@ -96,6 +101,25 @@ themeButton.onclick = () => {
   try { localStorage.setItem('alta-webvis-keyboard-theme',dark ? 'dark' : 'light'); } catch {}
 };
 const draft = $('#draft'), keys = $('#keys'), panel = $('dialog');
+function updateValidity(){
+  if(numeric) $('.apply').disabled = !/^[0-9]+$/.test(draft.value);
+}
+if(numeric){
+  document.title = 'ALTA · Цифровая клавиатура';
+  $('#label').textContent = $('.source label').textContent = 'Уставка, об/мин';
+  $('#saved').textContent = '120';
+  draft.addEventListener('beforeinput',event=>{
+    if(event.data && /[^0-9]/.test(event.data) && event.cancelable) event.preventDefault();
+  });
+  draft.addEventListener('input',()=>{
+    if(/[^0-9]/.test(draft.value)){
+      const cursor = draft.value.slice(0,draft.selectionStart).replace(/[^0-9]/g,'').length;
+      draft.value = draft.value.replace(/[^0-9]/g,'');
+      draft.setSelectionRange(cursor,cursor);
+    }
+    updateValidity();
+  });
+}
 const layouts = {
   ru: ['йцукенгшщзхъ','фывапролджэ','ячсмитьбю'],
   en: ['qwertyuiop','asdfghjkl','zxcvbnm'],
@@ -110,6 +134,7 @@ function replaceSelection(value, erase=false){
     start -= before[before.length-1].length;
   }
   draft.setRangeText(value,start,end,'end');
+  updateValidity();
   draft.focus();
 }
 function draw(){
@@ -125,6 +150,14 @@ function draw(){
     el.onpointerdown = event => event.preventDefault();
     el.onclick = action; parent.append(el);
     return el;
+  }
+  if(numeric){
+    for(const digit of '1234567890'){
+      const button = key(keys,digit,()=>replaceSelection(digit));
+      if(digit==='0') button.id='zero';
+    }
+    key(keys,'⌫',()=>replaceSelection('',true),'fn','Удалить цифру');
+    return;
   }
   layouts[symbols?'symbols':language].forEach((letters,index)=>{
     const line = row();
@@ -144,15 +177,17 @@ function draw(){
   key(controls,'Пробел',()=>replaceSelection(' '),'space');
 }
 function closeEditor(apply){
+  if(apply && numeric && !/^[0-9]+$/.test(draft.value)) return;
   if(apply) $('#saved').textContent=draft.value;
   panel.close(); $('main').classList.remove('editing'); $('#screen').inert=false;$('#open').focus();
 }
 function edit(){
   draft.value=$('#saved').textContent;
+  updateValidity();
   language='ru';symbols=false;shift=false;draw();
   $('#screen').inert=true; $('main').classList.add('editing');
   if(!panel.open) panel.show();
-  draft.focus();draft.setSelectionRange(draft.value.length,draft.value.length);
+  draft.focus();draft.setSelectionRange(numeric ? 0 : draft.value.length,draft.value.length);
 }
 $('#open').onclick=edit;
 $('.cancel').onclick=()=>closeEditor(false);
