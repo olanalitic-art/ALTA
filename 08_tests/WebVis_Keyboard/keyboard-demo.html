@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ALTA · Текстовая клавиатура</title>
-<script>if(location.search === "?tablet") document.documentElement.className="tablet";</script>
+<script>const layout = location.search.slice(1); if (["tablet", "desktop"].includes(layout)) document.documentElement.className = layout;</script>
 <style>
 @font-face{font-family:Rubik;src:url(Rubik-Regular.ttf)}
 *{box-sizing:border-box}
@@ -55,17 +55,19 @@ header{position:relative;z-index:2;flex-shrink:0;gap:8px}
 [data-theme="dark"] main.editing::after{background:#0004}
 
 
-  html.tablet main { width: min(768px, 100%); height: min(1024px, 100dvh); }
-  html.tablet article { padding: 32px; }
-  html.tablet dialog { inset: 50% auto auto 50%; transform: translate(-50%, -50%);
+  html:is(.tablet, .desktop) main { width: min(768px, 100%); height: min(1024px, 100dvh); }
+  html:is(.tablet, .desktop) article { padding: 32px; }
+  html:is(.tablet, .desktop) dialog { inset: 50% auto auto 50%; transform: translate(-50%, -50%);
     width: 640px; border-radius: 8px; box-shadow: 0 6px 20px #14101c33; }
-  html.tablet #keys { padding-inline: 14px; }
-  html.tablet .row { gap: 4px; }
-  html.tablet .key { max-width: 54px; }
-  html.tablet .key.space { max-width: 300px; }
-  html.tablet footer { padding-bottom: 14px; }
+  html:is(.tablet, .desktop) #keys { padding-inline: 14px; }
+  html:is(.tablet, .desktop) .row { gap: 4px; }
+  html:is(.tablet, .desktop) .key { max-width: 54px; }
+  html:is(.tablet, .desktop) .key.space { max-width: 300px; }
+  html:is(.tablet, .desktop) footer { padding-bottom: 14px; }
 
 .back{margin-left:auto;color:var(--blue);padding:10px 0;text-underline-offset:3px}
+html.desktop main { width: min(1280px, 100%); height: min(720px, 100dvh); }
+@media (hover: hover) { .key:hover { outline: 1px solid var(--blue); outline-offset: -1px; } }
 </style>
 <main class="editing">
 <header><strong>ALTA</strong><button id="theme" type="button" aria-label="Тёмная тема" aria-pressed="false" title="Тёмная тема">☾</button><span>Веб-визуализация</span><a class="back" href="./" target="_top" aria-label="Все экраны">Экраны</a></header>
