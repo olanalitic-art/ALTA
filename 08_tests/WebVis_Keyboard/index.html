@@ -52,6 +52,18 @@ header{position:relative;z-index:2;flex-shrink:0;gap:8px}
 [data-theme="dark"] .key.on,[data-theme="dark"] .key:active{background:#1e4898;color:white}
 [data-theme="dark"] .apply{color:#15284d}
 [data-theme="dark"] main.editing::after{background:#0004}
+
+@media (min-width: 768px) {
+  main { width: min(768px, 100%); height: min(1024px, 100dvh); }
+  article { padding: 32px; }
+  dialog { inset: 50% auto auto 50%; transform: translate(-50%, -50%);
+    width: 640px; border-radius: 8px; box-shadow: 0 6px 20px #14101c33; }
+  #keys { padding-inline: 14px; }
+  .row { gap: 4px; }
+  .key { max-width: 54px; }
+  .key.space { max-width: 300px; }
+  footer { padding-bottom: 14px; }
+}
 </style>
 <main class="editing">
 <header><strong>ALTA</strong><button id="theme" type="button" aria-label="Тёмная тема" aria-pressed="false" title="Тёмная тема">☾</button><span>Веб-визуализация</span></header>
