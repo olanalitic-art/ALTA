@@ -1,4 +1,4 @@
-/* Local screen behavior. Component implementations and styles come from ../../02_components/ and ../../01_foundations/. */
+/* Local screen behavior. Component implementations and styles come from ../02_components/ and ../01_foundations/. */
 (() => {
   const rows=[...document.querySelectorAll('[data-shell="AltaIDE_TreeLevels"]')];
   const state=row=>AltaShell.definitions.get(row.dataset.shell).variants[Number(row.dataset.variant)].props;
