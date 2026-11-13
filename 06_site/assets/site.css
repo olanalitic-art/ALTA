@@ -341,3 +341,5 @@ html[data-theme="light"] .shell-component:not([data-static]) [data-shell-action=
 .demo-stage.cp-stage.cp-stage--bg-code-canvas,.demo-stage.cp-stage.cp-stage--code-canvas,.demo-stage.cp-stage.cp-stage--code-canvas-double{align-items:center!important;overflow:hidden}
 .demo-controls[hidden],.control-group [hidden]{display:none!important}
 .demo-stage.cp-stage[class*="cp-stage--code-canvas"]{justify-content:safe center!important;overflow:hidden!important}
+/* Status Bar во всю ширину рамки, чтобы были видны иконки справа (в Figma ширина 1366px) */
+.demo-stage [data-shell="AltaIDE_StatusBar"],.demo-stage [data-shell="AltaIDE_StatusBar"]>.shell-node,.state [data-shell="AltaIDE_StatusBar"],.state [data-shell="AltaIDE_StatusBar"]>.shell-node{width:100%!important;max-width:100%;min-width:0}
