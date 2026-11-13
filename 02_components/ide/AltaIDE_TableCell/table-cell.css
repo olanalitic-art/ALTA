@@ -47,3 +47,6 @@
 .shell-component .shell-868201fbc9a3{position:absolute;background:var(--shell-dark-blue-7);height:27px;left:0px;top:0px;width:4px;}
 .shell-component .shell-1a81bd0f4a80{background:var(--shell-tablecell-background-hover);border-width:0;border-color:transparent;border-style:solid;align-content:stretch;display:flex;gap:var(--shell-tablecell-between);height:28px;align-items:center;padding-right:var(--shell-tablecell-hpadding);padding-left:var(--shell-tablecell-hpadding);padding-top:var(--shell-tablecell-vpadding);padding-bottom:var(--shell-tablecell-vpadding);position:relative;width:172px;isolation:isolate;}
 
+
+/* Наведение на ячейку в обычном состоянии (без перерисовки, подсветка исчезает, как только курсор уходит) */
+.shell-component[data-shell="AltaIDE_TableCell"]:not([data-static]):not([data-static] *)>.shell-b01de0435910:hover{background:var(--shell-tablecell-background-hover)}
