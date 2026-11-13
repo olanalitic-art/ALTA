@@ -77,3 +77,16 @@
 .l-context-menu-root::after{display:none}
 /* Мастер-макет: пустая область содержимого под вкладками */
 .master-slot{flex:1 1 auto;align-self:stretch;min-height:0;background:var(--shell-content-background,transparent)}
+
+/* Стрелка дерева: вниз у раскрытой ветки, вправо у свёрнутой (AltaIDE_IconArrowStroke, Type=Down / Rigth) */
+.l-arrow-right{display:none!important}
+[data-shell="AltaIDE_TreeLevels"][aria-expanded="false"] .l-arrow-down{display:none!important}
+[data-shell="AltaIDE_TreeLevels"][aria-expanded="false"] .l-arrow-right{display:block!important}
+/* Подсказка TooltipHelp у команд */
+.l-tooltip{position:fixed;z-index:30;pointer-events:none}
+.l-tooltip[hidden]{display:none}
+.l-tooltip .n-8cd68033152e{width:max-content;white-space:nowrap}
+.l-tooltip .n-0b932a7b9889[hidden]{display:none}
+.l-command{cursor:pointer}
+.l-command:hover{background:rgba(255,255,255,.06)}
+.l-command:focus-visible{outline:1px solid #585e6c;outline-offset:-1px}
