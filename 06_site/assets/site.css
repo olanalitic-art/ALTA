@@ -345,3 +345,6 @@ html[data-theme="light"] .shell-component:not([data-static]) [data-shell-action=
 .demo-stage [data-shell="AltaIDE_StatusBar"],.demo-stage [data-shell="AltaIDE_StatusBar"]>.shell-node,.state [data-shell="AltaIDE_StatusBar"],.state [data-shell="AltaIDE_StatusBar"]>.shell-node{width:100%!important;max-width:100%;min-width:0}
 /* Применение: содержимое не вылезает за карточку и под правое меню */
 .usage{grid-template-columns:repeat(2,minmax(0,1fr))}.usage--single{grid-template-columns:minmax(0,1fr)}@media (max-width:900px){.usage{grid-template-columns:minmax(0,1fr)}}.usage-card,.usage-example{min-width:0;max-width:100%;overflow:hidden}
+
+/* Шапка главной страницы */
+.site-hero{padding:8px 0 32px;margin-bottom:8px;border-bottom:1px solid var(--line)}.site-hero h1{font-size:40px;line-height:1.15;letter-spacing:-1.4px;margin:0 0 16px}.site-hero-lead{font-size:16px;line-height:1.55;color:var(--ink);margin:0 0 16px;max-width:760px}.site-hero-sub{font-size:14px;color:var(--muted);margin:0 0 8px}.site-hero-list{margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:var(--muted)}@media (max-width:700px){.site-hero h1{font-size:30px}}
