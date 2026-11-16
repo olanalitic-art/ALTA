@@ -18,3 +18,7 @@
 - `../../../01_foundations/runtime/shell.js` — общая логика локального примера.
 
 Полные значения переменных, режимы и цепочки алиасов проверены в текущей Figma и сохранены в `../../../01_foundations/tokens/figma-altaide-composed-variables.json`.
+
+## Зафиксированные правила
+
+Панель ошибок не ниже 100 px. Стартовая высота `max(10vh, 100px)`. Полный список: [`07_docs/component-rules.md`](../../../07_docs/component-rules.md).

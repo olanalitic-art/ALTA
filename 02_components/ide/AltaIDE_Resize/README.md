@@ -33,3 +33,7 @@
   AltaSidebarResize.attach({ panel: sidebarElement, splitter: resizeElement, side: 'left', app: appElement });
 </script>
 ```
+
+## Зафиксированные правила
+
+Вертикальный разделитель шириной 10 px. Работает по требованиям к ресайзу сайдбаров. Полный список: [`07_docs/component-rules.md`](../../../07_docs/component-rules.md).
