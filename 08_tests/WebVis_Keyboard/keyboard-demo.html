@@ -33,7 +33,7 @@ input:focus{box-shadow:0 0 0 2px #dfe8ff}
 .key.fn{background:#e2e4eb;font-size:14px}.key.space{flex:4}
 .key.on{background:#dfe8ff;color:#1e2f93}
 .key:active{background:#bfd0ff}
-footer{display:flex;justify-content:flex-end;gap:16px;border-top:1px solid var(--line);padding:14px 14px max(14px,env(safe-area-inset-bottom))}
+footer{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;border-top:1px solid var(--line);padding:14px 14px max(14px,env(safe-area-inset-bottom))}
 footer button{height:48px;padding:0 16px}
 .cancel{background:#ebecef}.apply{background:var(--blue);color:white}
 [hidden]{display:none!important}
@@ -72,7 +72,6 @@ html.numeric #keys {display:grid;grid-template-columns:repeat(3,1fr);gap:4px;wid
 html.numeric #keys .key {max-width:none}
 html.numeric:is(.desktop,.tablet) dialog {width:320px}
 html.numeric #zero {grid-column:span 2}
-html.numeric footer {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 
 .apply:disabled {background:var(--soft);color:var(--muted);cursor:default}
 </style>
