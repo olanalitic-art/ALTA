@@ -379,3 +379,4 @@ html[data-theme="light"] .shell-component:not([data-static]) [data-shell-action=
 .ss-hit{font-weight:700;color:var(--blue)}
 .ss-swatch{display:inline-block;width:10px;height:10px;border-radius:2px;border:1px solid var(--line);margin-right:4px;vertical-align:-1px}
 .ss-hint[hidden],.ss-results[hidden]{display:none}
+#site-search{padding-top:10px}
