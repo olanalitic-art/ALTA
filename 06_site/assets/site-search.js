@@ -2,7 +2,7 @@
    Ищет по названию, коду, имени и узлу Figma, синонимам, описанию, токенам, цветам и иконкам. */
 (function(){
   var root=document.getElementById('site-search');var data=window.ALTA_SEARCH_INDEX;if(!root||!data)return;
-  var input=root.querySelector('#ss-q'),list=root.querySelector('#ss-results'),count=root.querySelector('#ss-count'),hint=root.querySelector('#ss-hint')||{};
+  var input=root.querySelector('#ss-q'),list=root.querySelector('#ss-results'),count=root.querySelector('#ss-count'),hint=root.querySelector('#ss-hint')||{},clear=root.querySelector('#ss-clear');
   var lib='all',active=-1,base=root.getAttribute('data-base')||'';
   var norm=function(s){return String(s||'').toLowerCase().replace(/ё/g,'е').replace(/[‐-–—]/g,'-')};
   var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
@@ -29,9 +29,9 @@
     return best;
   }
   function render(){
-    var q=norm(input.value).trim();active=-1;
+    var q=norm(input.value).trim();active=-1;if(clear)clear.hidden=!input.value;
     root.querySelectorAll('[data-lib]').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-lib')===lib))});
-    if(!q){list.innerHTML='';list.hidden=true;count.textContent='';hint.hidden=false;return}
+    if(!q){list.innerHTML='';list.hidden=true;list.scrollTop=0;count.textContent='';hint.hidden=false;return}
     hint.hidden=true;
     var comps=[];
     data.components.forEach(function(c){if(lib!=='all'&&lib!=='icons'&&c.lib!==lib)return;if(lib==='icons')return;
@@ -47,12 +47,13 @@
       html+='<li role="option" id="ss-o'+c.slug+'"><a href="'+base+c.url+'"><span class="ss-title">'+hl(c.title,q)+'</span><span class="ss-lib">'+esc(c.lib)+'</span><span class="ss-intro">'+(m.field==='intro'?hl(c.intro,q):esc(c.intro))+'</span>'+why+'</a></li>'});
     icons.slice(0,40).forEach(function(i){var used=i.used.map(function(s){return bySlug[s]?bySlug[s].title:s});
       html+='<li role="option" class="ss-icon"><a href="'+base+'foundations/icons/index.html?q='+encodeURIComponent(i.name)+'"><span class="ss-title">'+hl(i.name,q)+'</span><span class="ss-lib">Иконка</span><span class="ss-intro">'+esc(i.path)+'</span>'+(used.length?'<span class="ss-why">используется в: '+esc(used.slice(0,6).join(', '))+(used.length>6?' и ещё '+(used.length-6):'')+'</span>':'')+'</a></li>'});
-    list.innerHTML=html;list.hidden=!html;
+    list.innerHTML=html;list.hidden=!html;list.scrollTop=0;
     var n=comps.length,k=icons.length;
     count.textContent=html?(n?plural(n,'компонент','компонента','компонентов'):'')+(n&&k?', ':'')+(k?plural(k,'иконка','иконки','иконок'):'')+(n>60||k>40?'. Показаны первые, уточните запрос':''):'Ничего не найдено. Попробуйте другое слово, название токена или цвет, например #3d414b.';
   }
   function move(d){var items=list.querySelectorAll('li a');if(!items.length)return;active=(active+d+items.length)%items.length;items[active].focus()}
-  input.addEventListener('input',render);
+  ['input','search','change','keyup','cut','paste'].forEach(function(ev){input.addEventListener(ev,function(){setTimeout(render,0)})});
+  if(clear)clear.addEventListener('click',function(){input.value='';render();input.focus()});
   input.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();move(1)}else if(e.key==='Escape'){input.value='';render()}else if(e.key==='Enter'){var a=list.querySelector('li a');if(a){e.preventDefault();location.href=a.href}}});
   list.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();move(1)}else if(e.key==='ArrowUp'){e.preventDefault();if(active<=0){active=-1;input.focus()}else move(-1)}else if(e.key==='Escape'){input.focus()}});
   root.querySelectorAll('[data-lib]').forEach(function(b){b.addEventListener('click',function(){lib=b.getAttribute('data-lib');render();input.focus()})});
