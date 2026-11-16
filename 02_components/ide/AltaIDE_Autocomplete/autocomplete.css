@@ -131,3 +131,6 @@
 .alta-component .n-f8ceed03ef7e{width:20px;height:20px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}
 .alta-component .n-11464ac208f8{width:8px;height:280px;position:absolute;left:419px;top:0px;display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:8px;padding-top:0px;padding-right:0px;padding-bottom:152px;padding-left:0px;border-radius:var(--scroll-radius) var(--scroll-radius) var(--scroll-radius) var(--scroll-radius);background:var(--scroll-background);}
 .alta-component .n-3bbb137045e4{width:8px;height:70px;border-radius:var(--scroll-radius) var(--scroll-radius) var(--scroll-radius) var(--scroll-radius);background:var(--scroll-element-default);}
+
+/* Подсказка «Enter - Вставить, Tab - заменить» в одну строку: в Figma ширина 188px, но на части систем текст шире и переносился */
+.alta-component .n-d9a0cb06c67e,.alta-control .n-d9a0cb06c67e{width:max-content!important;white-space:nowrap!important}
