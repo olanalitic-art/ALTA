@@ -68,16 +68,11 @@ header{position:relative;z-index:2;flex-shrink:0;gap:8px}
 .back{margin-left:auto;color:var(--blue);padding:10px 0;text-underline-offset:3px}
 html.desktop main { width: min(1280px, 100%); height: min(720px, 100dvh); }
 @media (hover: hover) { .key:hover { outline: 1px solid var(--blue); outline-offset: -1px; } }
-html.numeric #keys {display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:min(100%,320px);margin:auto;padding:0 14px 12px}
+html.numeric #keys {display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:100%;margin:auto;padding:0 14px 12px}
 html.numeric #keys .key {max-width:none}
 html.numeric:is(.desktop,.tablet) dialog {width:320px}
 html.numeric #zero {grid-column:span 2}
-html.numeric .editor {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}
-html.numeric .editor label {grid-column:1/-1;margin:0}
-html.numeric .editor input {min-width:0}
-html.numeric .editor footer {gap:4px;border:0;padding:0}
-html.numeric .editor footer button {padding-inline:8px}
-html.numeric #keys {width:100%;padding-bottom:max(14px,env(safe-area-inset-bottom))}
+html.numeric footer {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 
 .apply:disabled {background:var(--soft);color:var(--muted);cursor:default}
 </style>
@@ -112,7 +107,6 @@ function updateValidity(){
   if(numeric) $('.apply').disabled = !/^[0-9]+$/.test(draft.value);
 }
 if(numeric){
-  $('.editor').append(panel.querySelector('footer'));
   document.title = 'ALTA · Цифровая клавиатура';
   $('#label').textContent = $('.source label').textContent = 'Уставка, об/мин';
   $('#saved').textContent = '120';
