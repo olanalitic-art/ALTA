@@ -2,7 +2,7 @@
    Ищет по названию, коду, имени и узлу Figma, синонимам, описанию, токенам, цветам и иконкам. */
 (function(){
   var root=document.getElementById('site-search');var data=window.ALTA_SEARCH_INDEX;if(!root||!data)return;
-  var input=root.querySelector('#ss-q'),list=root.querySelector('#ss-results'),count=root.querySelector('#ss-count'),hint=root.querySelector('#ss-hint');
+  var input=root.querySelector('#ss-q'),list=root.querySelector('#ss-results'),count=root.querySelector('#ss-count'),hint=root.querySelector('#ss-hint')||{};
   var lib='all',active=-1,base=root.getAttribute('data-base')||'';
   var norm=function(s){return String(s||'').toLowerCase().replace(/ё/g,'е').replace(/[‐-–—]/g,'-')};
   var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
@@ -31,7 +31,7 @@
   function render(){
     var q=norm(input.value).trim();active=-1;
     root.querySelectorAll('[data-lib]').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-lib')===lib))});
-    if(!q&&lib==='all'){list.innerHTML='';list.hidden=true;count.textContent='';hint.hidden=false;return}
+    if(!q){list.innerHTML='';list.hidden=true;count.textContent='';hint.hidden=false;return}
     hint.hidden=true;
     var comps=[];
     data.components.forEach(function(c){if(lib!=='all'&&lib!=='icons'&&c.lib!==lib)return;if(lib==='icons')return;

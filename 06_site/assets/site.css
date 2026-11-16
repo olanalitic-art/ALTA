@@ -354,7 +354,7 @@ html[data-theme="light"] .shell-component:not([data-static]) [data-shell-action=
 /* Поиск по витрине (assets/site-search.js) */
 .site-hero{margin-bottom:40px}
 .site-search{margin:0 0 82px}
-.ss-field{position:relative;max-width:760px}
+.ss-field{position:relative}
 .ss-icon-search{position:absolute;left:14px;top:50%;width:20px;height:20px;transform:translateY(-50%);color:var(--muted);pointer-events:none}
 #ss-q{width:100%;box-sizing:border-box;height:48px;padding:0 16px 0 44px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);font:inherit;font-size:15px}
 #ss-q::placeholder{color:var(--muted)}
@@ -368,7 +368,7 @@ html[data-theme="light"] .shell-component:not([data-static]) [data-shell-action=
 .ss-hint button{padding:2px 8px;font-size:12px}
 .ss-count{margin:16px 0 8px;font-size:13px;color:var(--muted)}
 .ss-count:empty{display:none}
-.ss-results{list-style:none;margin:0;padding:0;max-width:760px;border:1px solid var(--line);border-radius:10px;max-height:480px;overflow:auto}
+.ss-results{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:10px;max-height:480px;overflow:auto}
 .ss-results li+li{border-top:1px solid var(--line)}
 .ss-results a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:12px 16px;color:var(--ink);text-decoration:none}
 .ss-results a:hover,.ss-results a:focus{background:var(--blue-wash)}
