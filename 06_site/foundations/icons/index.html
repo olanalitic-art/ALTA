@@ -51,4 +51,4 @@
 var t=b.getAttribute('data-copy');try{navigator.clipboard.writeText(t)}catch(e){}b.classList.add('copied');setTimeout(function(){b.classList.remove('copied')},900)})});
 var q=document.getElementById('icon-q');if(q){q.addEventListener('input',function(){var v=q.value.trim().toLowerCase(),n=0;
 document.querySelectorAll('.icon-tile').forEach(function(t){var ok=!v||t.getAttribute('data-name').indexOf(v)>=0;t.hidden=!ok;if(ok)n++});
-document.getElementById('icon-n').textContent=n})}</script></body></html>
+document.getElementById('icon-n').textContent=n});var p=new URLSearchParams(location.search).get('q');if(p){q.value=p;q.dispatchEvent(new Event('input'))}}</script></body></html>
