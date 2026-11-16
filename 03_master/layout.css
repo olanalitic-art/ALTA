@@ -39,7 +39,7 @@
 .l-12b05d999615{align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:var(--shell-0);align-items:flex-start;min-width:1px;padding-top:var(--shell-0);padding-right:var(--shell-0);padding-bottom:var(--shell-0);padding-left:var(--shell-0);position:relative}
 /* Screen-level sizing and interaction; the shared library stays unchanged. */
 [data-name="AltaIDE/Tab"]{z-index:1}
-[data-name="AltaIDE/Sidebar"]{width:var(--sidebar-width,248px)!important}
+[data-name="AltaIDE/Sidebar"]{width:var(--sidebar-left-width,248px)!important}
 [data-name="AltaIDE/Sidebar"]>[data-name="Content"]{width:100%}
 [data-name="AltaIDE/Sidebar"]>[data-name="Content"]>.layout-component,
 [data-name="AltaIDE/Sidebar"]>[data-name="Content"]>[data-name="AltaIDE/HeadProject"]{width:100%!important}
@@ -99,3 +99,8 @@
 .l-tab:focus-visible{outline:1px solid #585e6c;outline-offset:-1px}
 .l-tab [data-tab-close]{cursor:pointer;border-radius:4px}
 .l-tab [data-tab-close]:hover{background:rgba(255,255,255,.08)}
+
+/* Ресайз сайдбара: 07_docs/sidebar-resize.md. Приложение не уже 1380 px, при узком окне появляется горизонтальная прокрутка */
+main{min-width:1380px}
+[data-name="AltaIDE/Sidebar"] .l-31c662901267{width:100%}
+html,body{overflow-x:auto;overflow-y:hidden}
