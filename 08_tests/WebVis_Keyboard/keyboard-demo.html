@@ -71,7 +71,14 @@ html.desktop main { width: min(1280px, 100%); height: min(720px, 100dvh); }
 html.numeric #keys {display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:min(100%,320px);margin:auto;padding:0 14px 12px}
 html.numeric #keys .key {max-width:none}
 html.numeric:is(.desktop,.tablet) dialog {width:320px}
-html.numeric #zero {grid-column:2}
+html.numeric #zero {grid-column:span 2}
+html.numeric .editor {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}
+html.numeric .editor label {grid-column:1/-1;margin:0}
+html.numeric .editor input {min-width:0}
+html.numeric .editor footer {gap:4px;border:0;padding:0}
+html.numeric .editor footer button {padding-inline:8px}
+html.numeric #keys {width:100%;padding-bottom:max(14px,env(safe-area-inset-bottom))}
+
 .apply:disabled {background:var(--soft);color:var(--muted);cursor:default}
 </style>
 <main class="editing">
@@ -105,6 +112,7 @@ function updateValidity(){
   if(numeric) $('.apply').disabled = !/^[0-9]+$/.test(draft.value);
 }
 if(numeric){
+  $('.editor').append(panel.querySelector('footer'));
   document.title = 'ALTA · Цифровая клавиатура';
   $('#label').textContent = $('.source label').textContent = 'Уставка, об/мин';
   $('#saved').textContent = '120';
