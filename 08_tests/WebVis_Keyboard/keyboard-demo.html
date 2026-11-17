@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ALTA · Текстовая клавиатура</title>
-<script>const params = new URLSearchParams(location.search); const numeric = params.get("mode") === "numeric"; document.documentElement.classList.toggle("numeric",numeric);</script>
+<script>const params = new URLSearchParams(location.search); const numeric = params.get("mode") === "numeric"; const layout = params.get("screen") || location.search.slice(1); document.documentElement.classList.toggle("numeric",numeric); if (!numeric && ["tablet", "desktop"].includes(layout)) document.documentElement.classList.add(layout);</script>
 <style>
 @font-face{font-family:Rubik;src:url(Rubik-Regular.ttf)}
 *{box-sizing:border-box}
@@ -55,8 +55,18 @@ header{position:relative;z-index:2;flex-shrink:0;gap:8px}
 [data-theme="dark"] main.editing::after{background:#0004}
 
 
+  html:is(.tablet, .desktop) main { width: min(768px, 100%); height: min(1024px, 100dvh); }
+  html:is(.tablet, .desktop) article { padding: 32px; }
+  html:is(.tablet, .desktop) dialog { inset: 50% auto auto 50%; transform: translate(-50%, -50%);
+    width: 640px; border-radius: 8px; box-shadow: 0 6px 20px #14101c33; }
+  html:is(.tablet, .desktop) #keys { padding-inline: 14px; }
+  html:is(.tablet, .desktop) .row { gap: 4px; }
+  html:is(.tablet, .desktop) .key { max-width: 54px; }
+  html:is(.tablet, .desktop) .key.space { max-width: 300px; }
+  html:is(.tablet, .desktop) footer { padding-bottom: 14px; }
 
 .back{margin-left:auto;color:var(--blue);padding:10px 0;text-underline-offset:3px}
+html.desktop main { width: min(1280px, 100%); height: min(720px, 100dvh); }
 @media (hover: hover) { .key:hover { outline: 1px solid var(--blue); outline-offset: -1px; } }
 html.numeric #keys {display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:100%;margin:auto;padding:0 14px 12px}
 html.numeric #keys .key {max-width:none}
@@ -159,12 +169,12 @@ function draw(){
       const shown = shift && !symbols ? letter.toUpperCase() : letter;
       key(line,shown,()=>{replaceSelection(shown);if(shift){shift=false;draw()}});
     }
+    if(index===2) key(line,'⌫',()=>replaceSelection('',true),'fn','Удалить символ');
   });
   const controls = row();
   key(controls,symbols?(language==='ru'?'АБВ':'ABC'):'123',()=>{symbols=!symbols;shift=false;draw();draft.focus()},'fn','Буквы или символы');
   key(controls,language==='ru'?'EN':'РУ',()=>{language=language==='ru'?'en':'ru';symbols=false;shift=false;draw();draft.focus()},'fn','Сменить язык');
   key(controls,'Пробел',()=>replaceSelection(' '),'space');
-  key(controls,'⌫',()=>replaceSelection('',true),'fn','Удалить символ');
 }
 function closeEditor(apply){
   if(apply && numeric && !/^[0-9]+$/.test(draft.value)) return;
