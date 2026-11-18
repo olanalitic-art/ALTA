@@ -3,80 +3,63 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ALTA · Текстовая клавиатура</title>
-<script>const params = new URLSearchParams(location.search); const numeric = params.get("mode") === "numeric"; const layout = params.get("screen") || location.search.slice(1); document.documentElement.classList.toggle("numeric",numeric); if (!numeric && ["tablet", "desktop"].includes(layout)) document.documentElement.classList.add(layout);</script>
+<script>const params = new URLSearchParams(location.search); const numeric = params.get("mode") === "numeric"; const layout = params.get("screen") || location.search.slice(1); document.documentElement.classList.toggle("numeric",numeric); if (!numeric && ["tablet"].includes(layout)) document.documentElement.classList.add(layout);</script>
+<link rel="stylesheet" href="../../01_foundations/tokens/tokens.css">
+<link rel="stylesheet" href="../../01_foundations/tokens/altaide-theme.css">
 <style>
 @font-face{font-family:Rubik;src:url(Rubik-Regular.ttf)}
 *{box-sizing:border-box}
-:root{--ink:#303646;--muted:#626e8e;--line:#e2e4eb;--blue:#4561db;--soft:#f3f4f7}
-body{margin:0;min-height:100svh;display:grid;place-items:center;background:#e2e4eb;color:var(--ink);font:14px/20px Rubik,Arial,sans-serif}
-main{position:relative;isolation:isolate;width:min(390px,100%);height:min(844px,100dvh);overflow:hidden;background:#f7f7f7;display:flex;flex-direction:column}
-header{height:56px;background:white;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;padding:0 18px}
-header strong{font-size:20px;letter-spacing:1px;color:#121f7a} header span{border-left:1px solid var(--line);padding-left:14px}
-article{padding:24px 16px;flex:1}
-h1{margin:0 0 20px;font-size:22px;line-height:28px;font-weight:500}
-.source{background:white;border:1px solid var(--line);border-radius:6px;padding:14px}
-.source label{display:block;margin-bottom:8px}.source button{width:100%;display:flex;align-items:center;justify-content:space-between;text-align:left;gap:8px;background:white;border:1px solid #b3bacb;padding:10px 12px}
+:root{--key-width:28px;--key-gap:2px;--touch-height:48px;--action-width:178px}
+[data-theme="dark"]{color-scheme:dark}
+body{margin:0;background:var(--tabscontent-background);color:var(--labels-content);font:var(--regular-font-weight) var(--body-regular-font-size)/var(--body-regular-line-height) Rubik,Arial,sans-serif}
+main{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;background:var(--tabscontent-background)}
+header{height:56px;flex-shrink:0;background:var(--contextmenu-background);box-shadow:inset 0 -1px var(--separation-color);display:flex;align-items:center;gap:var(--source-8);padding:0 var(--source-12)}
+header strong{flex:none;width:56px;font-size:20px;line-height:24px;letter-spacing:1px;color:var(--link-content-default)}
+header span{flex:1;min-width:0;border-left:var(--border-border-1px) solid var(--separation-color);padding-left:var(--source-8);white-space:nowrap}
+article{padding:var(--source-24) var(--source-16)}
+h1{margin:0 0 var(--source-20,20px);font-size:22px;line-height:28px;font-weight:400}
+.source{background:var(--tabscontent-background);border:var(--border-border-1px) solid var(--separation-color);border-radius:var(--buttons-radius);padding:var(--source-12)}
+.source label,.editor label{display:block;margin-bottom:var(--labels-vbetween)}
+.source button{width:100%;height:var(--touch-height);display:flex;align-items:center;justify-content:space-between;text-align:left;gap:var(--source-8);background:var(--input-background-default-filled);color:var(--input-content-default-filled);border:var(--input-border) solid var(--input-border-default-filled);padding:0 var(--input-hpadding)}
 #saved{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 button,input{font:inherit;color:inherit}
-button{border:0;border-radius:4px;cursor:pointer;touch-action:manipulation}
-button:focus-visible{outline:2px solid var(--blue);outline-offset:1px}
-dialog{position:absolute;inset:auto 0 0;margin:0;width:100%;max-width:none;max-height:100%;padding:0;border:0;border-radius:8px 8px 0 0;color:var(--ink);background:white;box-shadow:0 -4px 20px #30364626}
-main.editing::after{content:"";position:absolute;inset:0;background:#30364626;z-index:1}
+button{border:0;border-radius:var(--buttons-radius);cursor:pointer;touch-action:manipulation}
+button:focus-visible{outline:2px solid var(--input-border-focused);outline-offset:1px}
+button svg{display:block;width:20px;height:20px;margin:auto;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+dialog{position:absolute;margin:0;max-width:none;max-height:100%;overflow:auto;padding:0;border:0;border-radius:var(--radius-l) var(--radius-l) 0 0;color:var(--labels-content);background:var(--tabscontent-background)}
+main.editing::after{content:"";position:absolute;inset:0;background:var(--systemtop-button-background);z-index:1}
 dialog[open]{z-index:2}
-.editor{padding:14px 14px 12px}
-.editor label{display:block;margin-bottom:8px}
-input{width:100%;height:48px;padding:0 12px;border:1px solid #5f81ff;border-radius:4px;font-size:18px;outline:0;caret-color:var(--blue)}
-input:focus{box-shadow:0 0 0 2px #dfe8ff}
-#keys{padding:0 6px 12px;display:grid;gap:4px}
-.row{display:flex;justify-content:center;gap:2px}
-.key{min-width:0;flex:1 1 0;height:48px;padding:0;background:var(--soft);font-size:18px}
-.key.fn{background:#e2e4eb;font-size:14px}.key.space{flex:4}
-.key.on{background:#dfe8ff;color:#1e2f93}
-.key:active{background:#bfd0ff}
-footer{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;border-top:1px solid var(--line);padding:14px 14px max(14px,env(safe-area-inset-bottom))}
-footer button{height:48px;padding:0 16px}
-.cancel{background:#ebecef}.apply{background:var(--blue);color:white}
+.editor{padding:var(--source-12)}
+input{width:100%;height:var(--touch-height);padding:0 var(--input-hpadding);border:var(--input-border) solid var(--input-border-default-filled);border-radius:var(--input-radius);background:var(--input-background-default-filled);color:var(--input-content-default-filled);outline:0;caret-color:var(--input-border-focused)}
+input:hover{border-color:var(--input-border-hover-filled)}
+input:focus{border-color:var(--input-border-focused);background:var(--input-background-focused);color:var(--input-content-focused)}
+#keys{padding:0 0 var(--source-12);display:grid;gap:var(--source-4)}
+.row{display:flex;gap:var(--key-gap);width:max-content;position:relative;left:var(--row-left,0px)}
+.key{flex:none;width:var(--key-width);height:var(--touch-height);padding:0;border:var(--buttons-borderwidth) solid var(--buttons-secondary-border-default);background:var(--buttons-secondary-background-default);color:var(--buttons-secondary-content-default)}
+.key:hover,.cancel:hover{background:var(--buttons-secondary-background-hover);color:var(--buttons-secondary-content-hovered);border-color:var(--buttons-secondary-border-hovered)}
+.key:active,.key.on,.cancel:active{background:var(--buttons-secondary-background-pressed);color:var(--buttons-secondary-content-pressed);border-color:var(--buttons-secondary-border-pressed)}
+.key.fn{width:var(--function-width,var(--key-width))}
+.key.space{width:var(--space-width,200px)}
+footer{display:flex;justify-content:flex-start;gap:var(--source-8);border-top:var(--border-border-1px) solid var(--separation-color);padding:var(--source-12) 0 max(var(--source-12),env(safe-area-inset-bottom));padding-left:var(--action-left,12px)}
+footer button{flex:none;width:var(--action-width);height:var(--touch-height);padding:0 var(--buttons-hpadding)}
+.cancel{border:var(--buttons-borderwidth) solid var(--buttons-secondary-border-default);background:var(--buttons-secondary-background-default);color:var(--buttons-secondary-content-default)}
+.apply{background:var(--buttons-primary-background-default);color:var(--buttons-primary-content-default)}
+.apply:hover{background:var(--buttons-primary-background-hover);color:var(--buttons-primary-content-hover)}
+.apply:active{background:var(--buttons-primary-background-pressed);color:var(--buttons-primary-content-pressed)}
+.apply:disabled{background:var(--buttons-primary-background-disabled);color:var(--buttons-primary-content-disabled);cursor:default}
 [hidden]{display:none!important}
-
-header{position:relative;z-index:2;flex-shrink:0;gap:8px}
-#theme{width:44px;height:44px;background:transparent;color:inherit;font:24px/1 Arial,sans-serif}
-#theme:hover,#theme:focus-visible{background:var(--soft)}
-:root[data-theme="dark"]{color-scheme:dark;--ink:#f0ecec;--line:#3d414b;--blue:#75a0f4;--soft:#3d414b}
-[data-theme="dark"] body{background:#191a1c}
-[data-theme="dark"] main{background:#222225}
-[data-theme="dark"] :is(header,.source,.source button,dialog,input){background:#26282c}
-[data-theme="dark"] header strong{color:#a3c2ff}
-[data-theme="dark"] .source button{border-color:#585e6c}
-[data-theme="dark"] input{border-color:#75a0f4}
-[data-theme="dark"] input:focus{box-shadow:0 0 0 2px #18315e}
-[data-theme="dark"] :is(.key.fn,.cancel){background:#585e6c}
-[data-theme="dark"] .key.on,[data-theme="dark"] .key:active{background:#1e4898;color:white}
-[data-theme="dark"] .apply{color:#15284d}
-[data-theme="dark"] main.editing::after{background:#0004}
-
-
-  html:is(.tablet, .desktop) main { width: min(768px, 100%); height: min(1024px, 100dvh); }
-  html:is(.tablet, .desktop) article { padding: 32px; }
-  html:is(.tablet, .desktop) dialog { inset: 50% auto auto 50%; transform: translate(-50%, -50%);
-    width: 640px; border-radius: 8px; box-shadow: 0 6px 20px #14101c33; }
-  html:is(.tablet, .desktop) #keys { padding-inline: 14px; }
-  html:is(.tablet, .desktop) .row { gap: 4px; }
-  html:is(.tablet, .desktop) .key { max-width: 54px; }
-  html:is(.tablet, .desktop) .key.space { max-width: 300px; }
-  html:is(.tablet, .desktop) footer { padding-bottom: 14px; }
-
-.back{margin-left:auto;color:var(--blue);padding:10px 0;text-underline-offset:3px}
-html.desktop main { width: min(1280px, 100%); height: min(720px, 100dvh); }
-@media (hover: hover) { .key:hover { outline: 1px solid var(--blue); outline-offset: -1px; } }
-html.numeric #keys {display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:100%;margin:auto;padding:0 14px 12px}
-html.numeric #keys .key {max-width:none}
-html.numeric #zero {grid-column:span 2}
-
-.apply:disabled {background:var(--soft);color:var(--muted);cursor:default}
+#theme{flex:none;width:44px;height:44px;background:transparent;color:var(--labels-content)}
+#theme:hover{background:var(--buttons-secondary-background-hover)}
+.back{flex:none;width:56px;margin-left:auto;color:var(--link-content-default);padding:12px 0;text-underline-offset:3px}
+html.tablet article{padding:32px}
+html.numeric #keys{grid-template-columns:repeat(3,var(--numeric-key-width,118px));gap:var(--source-4);width:max-content;position:relative;left:var(--numeric-left,14px)}
+html.numeric .key{width:var(--numeric-key-width,118px)}
+html.numeric #zero{grid-column:span 2;width:calc(var(--numeric-key-width,118px)*2 + var(--source-4))}
+@media(max-width:359px){header span{display:none}}
 </style>
 <main class="editing">
 <header><strong>ALTA</strong><button id="theme" type="button" aria-label="Тёмная тема" aria-pressed="false" title="Тёмная тема">☾</button><span>Веб-визуализация</span><a class="back" href="./" target="_top" aria-label="Все экраны">Экраны</a></header>
-<section id="screen" inert><article><h1>Насосная станция</h1><div class="source"><label for="open">Название агрегата</label><button id="open"><span id="saved">Насос подачи</span><span aria-hidden="true">✎</span></button></div></article>
+<section id="screen" inert><article><h1>Насосная станция</h1><div class="source"><label for="open">Название агрегата</label><button id="open"><span id="saved">Насос подачи</span><svg aria-hidden="true" viewBox="0 0 20 20"><path d="m4 13-1 4 4-1L17 6l-3-3Z M12 5l3 3"/></svg></button></div></article>
 </section>
 <dialog open aria-labelledby="label">
 <div class="editor"><label id="label" for="draft">Название агрегата</label><input id="draft" inputmode="none" autocomplete="off" spellcheck="false" value="Насос подачи"></div>
@@ -85,11 +68,18 @@ html.numeric #zero {grid-column:span 2}
 </dialog></main>
 <script>
 const $ = selector => document.querySelector(selector);
+const icons = {
+  backspace:'<svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 4h11v12H7L2 10Z M10 7l5 6m0-6-5 6"/></svg>',
+  shift:'<svg aria-hidden="true" viewBox="0 0 20 20"><path d="m3 10 7-7 7 7h-4v7H7v-7Z"/></svg>',
+  sun:'<svg aria-hidden="true" viewBox="0 0 20 20"><circle cx="10" cy="10" r="4"/><path d="M10 1v2m0 14v2M1 10h2m14 0h2M4 4l1 1m10 10 1 1M4 16l1-1M15 5l1-1"/></svg>',
+  moon:'<svg aria-hidden="true" viewBox="0 0 20 20"><path d="M17 12A8 8 0 0 1 8 3a8 8 0 1 0 9 9Z"/></svg>'
+};
 const themeButton = $('#theme');
 function applyTheme(dark){
   document.documentElement.dataset.theme = dark ? 'dark' : 'light';
   themeButton.setAttribute('aria-pressed',String(dark));
-  themeButton.textContent = dark ? '☀' : '☾';
+  themeButton.innerHTML = dark ? icons.sun : icons.moon;
+  themeButton.setAttribute('aria-label',dark ? 'Включить светлую тему' : 'Включить тёмную тему');
   themeButton.title = dark ? 'Включить светлую тему' : 'Включить тёмную тему';
 }
 let dark = false;
@@ -147,6 +137,9 @@ function draw(){
     const el = document.createElement('button');
     el.className = 'key '+style; el.textContent = label;
     el.setAttribute('aria-label',name);
+    if(label==='⌫') el.innerHTML=icons.backspace;
+    if(label==='⇧') el.innerHTML=icons.shift;
+    if(!style) el.dataset.character='true';
     el.onpointerdown = event => event.preventDefault();
     el.onclick = action; parent.append(el);
     return el;
@@ -157,6 +150,7 @@ function draw(){
       if(digit==='0') button.id='zero';
     }
     key(keys,'⌫',()=>replaceSelection('',true),'fn','Удалить цифру');
+    snapGeometry();
     return;
   }
   layouts[symbols?'symbols':language].forEach((letters,index)=>{
@@ -175,7 +169,47 @@ function draw(){
   key(controls,symbols?(language==='ru'?'АБВ':'ABC'):'123',()=>{symbols=!symbols;shift=false;draw();draft.focus()},'fn','Буквы или символы');
   key(controls,language==='ru'?'EN':'РУ',()=>{language=language==='ru'?'en':'ru';symbols=false;shift=false;draw();draft.focus()},'fn','Сменить язык');
   key(controls,'Пробел',()=>replaceSelection(' '),'space');
+  snapGeometry();
 }
+
+function snapGeometry(){
+  const even = value => Math.floor(value/2)*2;
+  const wide = document.documentElement.classList.contains('tablet');
+  const main = $('main');
+  const width = even(Math.min(wide ? 768 : 390,innerWidth));
+  const height = Math.floor(Math.min(wide ? 1024 : 844,innerHeight));
+  main.style.width=width+'px'; main.style.height=height+'px';
+  main.style.marginLeft=Math.floor((innerWidth-width)/2)+'px';
+  main.style.marginTop=Math.floor((innerHeight-height)/2)+'px';
+  const panelWidth = even(Math.min(wide ? 640 : 390,width));
+  panel.style.width=panelWidth+'px';
+  panel.style.left=Math.floor((width-panelWidth)/2)+'px';
+  panel.style.borderRadius=wide ? 'var(--radius-l)' : 'var(--radius-l) var(--radius-l) 0 0';
+  const gap=wide ? 4 : 2;
+  const keyPadding=panelWidth<334 ? 4 : 12;
+  const keyWidth=Math.min(wide ? 46 : 30,even((panelWidth-2*keyPadding-11*gap)/12));
+  panel.style.setProperty('--key-width',keyWidth+'px');
+  panel.style.setProperty('--key-gap',gap+'px');
+  const functionWidth=wide ? 54 : 48;
+  panel.style.setProperty('--function-width',functionWidth+'px');
+  panel.style.setProperty('--space-width',even(panelWidth-24-2*functionWidth-2*gap)+'px');
+  for(const row of keys.querySelectorAll('.row')){
+    // Shift/delete share the letter width; only bottom-row controls are wider.
+    if(!row.querySelector('.space')) row.style.setProperty('--function-width',keyWidth+'px');
+    row.style.setProperty('--row-left',Math.floor((panelWidth-row.getBoundingClientRect().width)/2)+'px');
+  }
+  const digitWidth=even((panelWidth-24-8)/3);
+  panel.style.setProperty('--numeric-key-width',digitWidth+'px');
+  panel.style.setProperty('--numeric-left',Math.floor((panelWidth-3*digitWidth-8)/2)+'px');
+  const actionWidth=even((panelWidth-24-8)/2);
+  panel.style.setProperty('--action-width',actionWidth+'px');
+  panel.style.setProperty('--action-left',Math.floor((panelWidth-2*actionWidth-8)/2)+'px');
+  panel.style.top=wide ? Math.max(0,Math.floor((height-panel.offsetHeight)/2))+'px' : 'auto';
+  panel.style.bottom=wide ? 'auto' : '0px';
+}
+addEventListener('resize',snapGeometry);
+document.fonts.ready.then(snapGeometry);
+
 function closeEditor(apply){
   if(apply && numeric && !/^[0-9]+$/.test(draft.value)) return;
   if(apply) $('#saved').textContent=draft.value;
@@ -187,6 +221,7 @@ function edit(){
   language='ru';symbols=false;shift=false;draw();
   $('#screen').inert=true; $('main').classList.add('editing');
   if(!panel.open) panel.show();
+  snapGeometry();
   draft.focus();draft.setSelectionRange(numeric ? 0 : draft.value.length,draft.value.length);
 }
 $('#open').onclick=edit;
@@ -197,4 +232,5 @@ panel.addEventListener('keydown',event=>{
   if(event.key==='Enter' && event.target===draft && !event.isComposing){event.preventDefault();closeEditor(true)}
 });
 edit();
-</script></html>
+</script>
+<script src="audit.js"></script></html>
