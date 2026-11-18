@@ -1,3 +1,187 @@
-<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ALTA · 768 × 1024</title>
-<style>*{box-sizing:border-box}body{margin:0;background:#e2e4eb}main{width:100%;min-height:100svh;display:block}iframe{width:min(768px,100%);height:min(1024px,100dvh);border:0;display:block}</style>
-<main><iframe title="Текстовая клавиатура 768 × 1024" src="keyboard-demo.html?tablet"></iframe></main><script>function fitPreview(){const frame=document.querySelector("iframe");const width=Math.floor(Math.min(768,innerWidth)/2)*2;frame.style.width=width+"px";frame.style.height=Math.floor(Math.min(1024,innerHeight))+"px";frame.style.marginLeft=Math.floor((innerWidth-width)/2)+"px"}addEventListener("resize",fitPreview);fitPreview();</script></html>
+<!doctype html>
+<html lang="ru" data-theme="dark" data-layout="wide">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>try{const t=new URLSearchParams(location.search).get('theme');document.documentElement.dataset.theme=t==='light'||t==='dark'?t:localStorage.getItem('alta-text-keyboard-theme')||'dark'}catch{}</script>
+  <title>ALTA — Текстовая клавиатура 768 × 1024</title>
+  <link rel="stylesheet" href="../../01_foundations/tokens/tokens.css">
+  <link rel="stylesheet" href="../../01_foundations/tokens/altaide-theme.css">
+  <style>
+@font-face{font-family:Rubik;src:url("Rubik-Regular.ttf") format("truetype");font-display:swap}
+*{box-sizing:border-box}
+:root{color-scheme:light;--panel-width:390px;--panel-left:0px;--panel-top:24px;--digit-width:110px;--digit-left:0px;--extra-width:78px;--extra-left:3px;--action-width:166px;--action-left:1px;--key-height:48px}
+body{display:flow-root;margin:0;min-height:100svh;background:var(--toolbar-background);color:var(--labels-content);font:var(--regular-font-weight) var(--body-regular-font-size)/var(--body-regular-line-height) Rubik,Arial,sans-serif}
+.keyboard{position:relative;width:var(--panel-width);margin-left:var(--panel-left);margin-top:var(--panel-top);margin-bottom:24px;padding:24px;background:var(--tabscontent-background);border-radius:var(--radius-l);box-shadow:inset 0 0 0 var(--border-border-1px) var(--buttons-secondary-border-default)}
+header{text-align:center;margin-bottom:16px}
+h1{font:400 22px/28px Rubik,Arial,sans-serif;margin:0 0 4px}
+header p{margin:0;color:var(--labels-contentadditional);font:400 16px/24px Rubik,Arial,sans-serif}
+input{display:block;width:100%;height:56px;padding:0 var(--input-hpadding);border:var(--input-border) solid var(--input-border-default-filled);border-radius:var(--input-radius);outline:0;background:var(--input-background-default-filled);color:var(--input-content-default-filled);font:400 20px/28px Rubik,Arial,sans-serif;caret-color:var(--input-border-focused)}
+input:hover{border-color:var(--input-border-hover-filled)}
+input:focus{border-color:var(--input-border-focused);background:var(--input-background-focused);color:var(--input-content-focused)}
+input[aria-invalid="true"]{border-color:var(--input-border-invalid)}
+button{appearance:none;display:flex;align-items:center;justify-content:center;flex:none;height:var(--key-height);padding:0 var(--buttons-hpadding);border:var(--buttons-borderwidth) solid var(--buttons-secondary-border-default);border-radius:var(--buttons-radius);background:var(--buttons-secondary-background-default);color:var(--buttons-secondary-content-default);font:400 14px/20px Rubik,Arial,sans-serif;cursor:pointer;touch-action:manipulation;user-select:none}
+button:hover{background:var(--buttons-secondary-background-hover);border-color:var(--buttons-secondary-border-hovered);color:var(--buttons-secondary-content-hovered)}
+button:active{background:var(--buttons-secondary-background-pressed);border-color:var(--buttons-secondary-border-pressed);color:var(--buttons-secondary-content-pressed)}
+button:focus-visible{outline:2px solid var(--input-border-focused);outline-offset:2px}
+.controls{position:relative;left:var(--controls-left,0px);width:var(--controls-width,100%)}
+.clipboard,footer{display:flex;gap:var(--source-8);width:100%}
+.clipboard{margin:var(--source-8) 0}
+.clipboard button,footer button{width:var(--action-width)}
+.digits{display:grid;grid-template-columns:repeat(3,var(--digit-width));gap:var(--source-8);width:max-content}
+.digits button{width:var(--digit-width);font-size:20px;line-height:28px}
+.extras{display:flex;gap:var(--source-12);width:max-content;margin-top:var(--source-8)}
+.extras button:nth-child(3){margin-left:var(--extra-remainder,0px)}
+.extras button{width:var(--extra-width);font-size:20px;line-height:28px}
+svg{display:block;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+footer{margin-top:var(--source-8)}
+.primary{border-color:transparent;background:var(--buttons-primary-background-default);color:var(--buttons-primary-content-default)}
+.primary:hover{background:var(--buttons-primary-background-hover);color:var(--buttons-primary-content-hover)}
+.primary:active{background:var(--buttons-primary-background-pressed);color:var(--buttons-primary-content-pressed)}
+.primary:disabled{background:var(--buttons-primary-background-disabled);color:var(--buttons-primary-content-disabled);cursor:default}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:359px){.keyboard{padding:16px}}
+
+[data-theme="dark"]{color-scheme:dark}
+.theme-tools{position:absolute;top:8px;right:12px;display:flex;align-items:center;gap:var(--source-8);height:44px;z-index:1;color:var(--link-content-default)}
+.theme-tools span{font:400 16px/24px Rubik,Arial,sans-serif}
+#theme{width:44px;height:44px;padding:0}
+#theme svg{width:20px;height:20px}
+
+.text-keyboard{padding:16px 12px}
+.text-keyboard header{margin-bottom:var(--source-12)}
+.text-keyboard .controls{width:var(--text-width,356px);left:var(--text-left,5px)}
+#text-keys{display:grid;gap:var(--source-8)}
+.text-row{display:flex;gap:var(--text-gap,4px);width:100%}
+.text-key{width:var(--letter-width,32px);height:48px;padding:0;font:400 20px/28px Rubik,Arial,sans-serif}
+.text-key.function{font-size:12px;line-height:16px}
+.text-key svg{width:20px;height:20px}
+.text-key.space{width:var(--space-width,104px)}
+.text-key.mode{font-size:10px}
+.text-key[aria-pressed="true"]{background:var(--buttons-secondary-background-pressed);color:var(--buttons-secondary-content-pressed);border-color:var(--buttons-secondary-border-pressed)}
+.text-keyboard .clipboard,.text-keyboard footer{gap:var(--action-gap,8px)}
+@media(max-width:359px){.text-keyboard{padding-inline:4px}}
+
+.back-link{position:absolute;top:8px;left:12px;display:flex;align-items:center;height:44px;color:var(--link-content-default);font:400 14px/20px Rubik,Arial,sans-serif;text-underline-offset:3px;z-index:1}.back-link:focus-visible{outline:2px solid var(--input-border-focused);outline-offset:2px}
+</style>
+</head>
+<body>
+  <a class="back-link" href="./">Все клавиатуры</a>
+  <nav class="theme-tools" aria-label="Тема оформления"><span>ALTA</span><button type="button" id="theme" aria-label="Переключить тему" aria-pressed="true"></button></nav>
+  <main class="keyboard text-keyboard" aria-labelledby="title">
+    <header><h1 id="title">Ввод текста</h1><p>PLC_PRG.name</p></header>
+    <div class="controls">
+      <label class="sr-only" for="value">Значение PLC_PRG.name</label>
+      <input id="value" type="text" inputmode="none" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus>
+      <div class="clipboard" aria-label="Буфер обмена"><button type="button" id="paste">Вставить</button><button type="button" id="copy">Копировать</button></div>
+      <div id="text-keys" aria-label="Экранная клавиатура"></div>
+      <footer><button type="button" id="cancel">Отмена</button><button type="button" id="confirm" class="primary">ОК</button></footer>
+    </div>
+  </main>
+<script>
+const field=document.querySelector('#value');
+const panel=document.querySelector('.keyboard');
+const keyArea=document.querySelector('#text-keys');
+const themeButton=document.querySelector('#theme');
+const icons={
+  shift:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 12 9-9 9 9h-5v9H8v-9Z"/></svg>',
+  backspace:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h12v14H9L2 12Z M12 9l6 6m0-6-6 6"/></svg>',
+  left:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>',
+  right:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg>',
+  globe:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/></svg>',
+  enter:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 5v9H4m5-5-5 5 5 5"/></svg>',
+  sun:'<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="4"/><path d="M10 1v2m0 14v2M1 10h2m14 0h2M4 4l1 1m10 10 1 1M4 16l1-1M15 5l1-1"/></svg>',
+  moon:'<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M17 12A8 8 0 0 1 8 3a8 8 0 1 0 9 9Z"/></svg>'
+};
+const layouts={en:['qwertyuiop','asdfghjkl,','zxcvbnm.'],ru:['йцукенгшщзхъ','фывапролджэё','ячсмитьбю.']};
+const symbolLayouts=[['1234567890','@#№%&*()[]','-+.,:;!?'],['~`|•√π÷×§∆','£€$¢^°={}\\','<>_"\'!?;']];
+let language='en',mode='letters',shift=false,symbolPage=0,savedValue='';
+function setTheme(theme){
+  document.documentElement.dataset.theme=theme;
+  themeButton.innerHTML=theme==='dark'?icons.sun:icons.moon;
+  themeButton.setAttribute('aria-label',theme==='dark'?'Включить светлую тему':'Включить тёмную тему');
+  themeButton.setAttribute('aria-pressed',String(theme==='dark'));
+  themeButton.title=themeButton.getAttribute('aria-label');
+  try{localStorage.setItem('alta-text-keyboard-theme',theme)}catch{}
+}
+setTheme(document.documentElement.dataset.theme==='light'?'light':'dark');
+themeButton.onclick=()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+function insert(text){field.setRangeText(text,field.selectionStart,field.selectionEnd,'end');field.focus();}
+function erase(){
+  let start=field.selectionStart;const end=field.selectionEnd;
+  if(start===end&&start>0){const chars=Array.from(field.value.slice(0,start));start-=chars.at(-1).length;}
+  field.setRangeText('',start,end,'end');field.focus();
+}
+function move(direction){
+  let start=field.selectionStart,end=field.selectionEnd;
+  if(start!==end)start=direction<0?start:end;
+  else if(direction<0&&start>0)start-=Array.from(field.value.slice(0,start)).at(-1).length;
+  else if(direction>0&&start<field.value.length)start+=Array.from(field.value.slice(start))[0].length;
+  field.setSelectionRange(start,start);field.focus();
+}
+function accept(){savedValue=field.value;field.focus();field.select();}
+function cancel(){field.value=savedValue;field.focus();field.select();}
+function key(row,label,action,options={}){
+  const button=document.createElement('button');button.type='button';button.className='text-key'+(options.function?' function':'')+(options.className?' '+options.className:'');
+  button.setAttribute('aria-label',options.name||label);
+  if(options.icon)button.innerHTML=icons[options.icon];else button.textContent=label;
+  if(options.character)button.dataset.character='true';
+  if(options.pressed!==undefined)button.setAttribute('aria-pressed',String(options.pressed));
+  button.onpointerdown=e=>e.preventDefault();button.onclick=action;row.append(button);return button;
+}
+function draw(){
+  keyArea.replaceChildren();
+  const letterRows=mode==='letters'?layouts[language]:symbolLayouts[symbolPage];
+  for(const [index,letters] of letterRows.entries()){
+    const row=document.createElement('div');row.className='text-row';keyArea.append(row);
+    if(index===2)key(row,mode==='letters'?'Shift':'#+=',()=>{if(mode==='letters')shift=!shift;else symbolPage=1-symbolPage;draw();field.focus();},{function:true,icon:mode==='letters'?'shift':undefined,name:mode==='letters'?'Верхний регистр':'Другие символы',pressed:mode==='letters'?shift:symbolPage===1});
+    for(const character of letters){
+      const shown=mode==='letters'&&shift?character.toUpperCase():character;
+      key(row,shown,()=>{insert(shown);if(shift){shift=false;draw();}},{character:true});
+    }
+    if(index===2)key(row,'Удалить',erase,{function:true,icon:'backspace',name:'Удалить символ'});
+  }
+  const row=document.createElement('div');row.className='text-row';keyArea.append(row);
+  key(row,mode==='letters'?'?123':language==='ru'?'АБВ':'ABC',()=>{mode=mode==='letters'?'symbols':'letters';shift=false;symbolPage=0;draw();field.focus();},{function:true,className:'mode',name:'Буквы или символы'});
+  key(row,'Влево',()=>move(-1),{function:true,icon:'left',name:'Курсор влево'});
+  key(row,'Вправо',()=>move(1),{function:true,icon:'right',name:'Курсор вправо'});
+  key(row,'Язык',()=>{language=language==='en'?'ru':'en';mode='letters';shift=false;draw();field.focus();},{function:true,icon:'globe',name:'Сменить язык: '+(language==='en'?'EN → RU':'RU → EN')});
+  key(row,'Пробел',()=>insert(' '),{function:true,className:'space',name:'Пробел'});
+  key(row,'-',()=>insert('-'),{character:true});key(row,'_',()=>insert('_'),{character:true});
+  key(row,'Enter',accept,{function:true,icon:'enter',name:'Подтвердить ввод'});
+  fit();
+}
+for(const button of document.querySelectorAll('.theme-tools button,.clipboard button,footer button'))button.onpointerdown=e=>e.preventDefault();
+document.querySelector('#cancel').onclick=cancel;document.querySelector('#confirm').onclick=accept;
+document.querySelector('#copy').onclick=async()=>{
+  if(!field.value)return;
+  try{if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(field.value);else{field.select();document.execCommand('copy');}}catch{field.select();}field.focus();
+};
+document.querySelector('#paste').onclick=async()=>{
+  try{if(navigator.clipboard?.readText)insert((await navigator.clipboard.readText()).replace(/[\r\n]+/g,' '));else field.focus();}catch{field.focus();}
+};
+field.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();accept();}if(e.key==='Escape'){e.preventDefault();cancel();}});
+function fit(){
+  const even=n=>Math.floor(n/2)*2;
+  const wide=document.documentElement.dataset.layout==='wide';
+  const width=even(Math.min(wide?640:390,innerWidth));
+  panel.style.setProperty('--panel-width',width+'px');panel.style.setProperty('--panel-left',Math.floor((innerWidth-width)/2)+'px');
+  const padding=parseInt(getComputedStyle(panel).paddingLeft,10),available=width-padding*2;
+  const gap=innerWidth<360?2:4;
+  const columns=mode==='letters'&&language==='ru'?12:10;
+  // 596px fits both EN (10 × 56) and RU (12 × 46) with 4px gaps.
+  const rowWidth=wide&&available>=596?596:available;
+  const letterWidth=even((rowWidth-(columns-1)*gap)/columns);
+  const content=columns*letterWidth+(columns-1)*gap;
+  panel.style.setProperty('--text-width',content+'px');panel.style.setProperty('--text-left',Math.floor((available-content)/2)+'px');
+  panel.style.setProperty('--letter-width',letterWidth+'px');panel.style.setProperty('--text-gap',gap+'px');
+  panel.style.setProperty('--space-width',(content-7*letterWidth-7*gap)+'px');
+  const actionWidth=even((content-8)/2),remainder=content-2*actionWidth-8;
+  panel.style.setProperty('--action-width',actionWidth+'px');panel.style.setProperty('--action-gap',(8+remainder)+'px');
+  panel.style.setProperty('--panel-top',Math.max(64,Math.floor((innerHeight-panel.offsetHeight)/2))+'px');
+}
+addEventListener('resize',fit);document.fonts.ready.then(fit);draw();
+
+</script>
+</body>
+</html>

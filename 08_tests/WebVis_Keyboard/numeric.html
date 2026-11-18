@@ -48,10 +48,12 @@ footer{margin-top:var(--source-8)}
 #theme{width:44px;height:44px;padding:0}
 #theme svg{width:20px;height:20px}
 
+.back-link{position:absolute;top:8px;left:12px;display:flex;align-items:center;height:44px;color:var(--link-content-default);font:400 14px/20px Rubik,Arial,sans-serif;text-underline-offset:3px;z-index:1}.back-link:focus-visible{outline:2px solid var(--input-border-focused);outline-offset:2px}
 </style>
   
 </head>
 <body>
+  <a class="back-link" href="./">Все клавиатуры</a>
   <nav class="theme-tools" aria-label="Тема оформления"><span>ALTA</span><button type="button" id="theme" aria-label="Переключить тему" aria-pressed="false"></button></nav>
   <main class="keyboard" aria-labelledby="title">
     <header>
@@ -168,3 +170,4 @@ addEventListener('resize',fit);document.fonts.ready.then(fit);update();fit();
 </script>
 </body>
 </html>
+
