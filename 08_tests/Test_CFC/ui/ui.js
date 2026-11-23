@@ -67,6 +67,8 @@ function renderSelection(){
   path.classList.toggle('is-active',active);path.classList.toggle('is-muted',!!selectedNode&&(variant==='c'||variant==='d')&&!active);
   if(active){count++;const from=ports(a),to=ports(b),edge=edges.find(e=>e[0]===a&&e[1]===b);from.outputs[0].el.classList.add('is-active-port');to.inputs[edge[2]].el.classList.add('is-active-port');}
  });
+ // Активные трассы поверх совпадающих участков соседних ветвей.
+ document.querySelectorAll('.ui-wire.is-active').forEach(path=>path.parentNode.append(path));
  document.querySelector('#selection-status').textContent=selectedNode?`Выбрано: ${byId[selectedNode].title} · Связей: ${count}`:'Выберите ноду, чтобы увидеть '+(variant==='a'?'общий порядок исполнения':variant==='b'?'порядок её цепочки':variant==='c'?'её зависимости':'её зависимости и дальнейшее влияние');
 }
 document.querySelector('#static-canvas').addEventListener('click',event=>{if(!event.target.closest('.static-node')){selectedNode=null;renderSelection();}});
