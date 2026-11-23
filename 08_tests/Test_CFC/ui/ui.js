@@ -63,7 +63,7 @@ function renderSelection(){
  let count=0;
  document.querySelectorAll('.ui-wire').forEach(path=>{
   const a=path.dataset.from,b=path.dataset.to;
-  const active=!!selectedNode&&(variant==='a'?(b===selectedNode||(down.has(b)&&(down.has(a)||a===selectedNode))):(up.has(a)&&(up.has(b)||b===selectedNode))||(down.has(b)&&(down.has(a)||a===selectedNode)));
+  const active=!!selectedNode&&((up.has(a)&&(up.has(b)||b===selectedNode))||(down.has(b)&&(down.has(a)||a===selectedNode)));
   path.classList.toggle('is-active',active);path.classList.toggle('is-muted',!!selectedNode&&(variant==='c'||variant==='d')&&!active);
   if(active){count++;const from=ports(a),to=ports(b),edge=edges.find(e=>e[0]===a&&e[1]===b);from.outputs[0].el.classList.add('is-active-port');to.inputs[edge[2]].el.classList.add('is-active-port');}
  });
