@@ -64,8 +64,11 @@ function renderSelection(){
  document.querySelectorAll('.ui-wire').forEach(path=>{
   const a=path.dataset.from,b=path.dataset.to;
   const active=!!selectedNode&&((up.has(a)&&(up.has(b)||b===selectedNode))||(down.has(b)&&(down.has(a)||a===selectedNode)));
-  path.classList.toggle('is-active',active);path.classList.toggle('is-muted',!!selectedNode&&(variant==='c'||variant==='d')&&!active);
-  if(active){count++;const from=ports(a),to=ports(b),edge=edges.find(e=>e[0]===a&&e[1]===b);from.outputs[0].el.classList.add('is-active-port');to.inputs[edge[2]].el.classList.add('is-active-port');}
+  // В варианте A трасса на линиях и портах не подсвечивается.
+  const traced=active&&variant!=='a';
+  path.classList.toggle('is-active',traced);path.classList.toggle('is-muted',!!selectedNode&&(variant==='c'||variant==='d')&&!active);
+  if(active)count++;
+  if(traced){const from=ports(a),to=ports(b),edge=edges.find(e=>e[0]===a&&e[1]===b);from.outputs[0].el.classList.add('is-active-port');to.inputs[edge[2]].el.classList.add('is-active-port');}
  });
  // Активные трассы поверх совпадающих участков соседних ветвей.
  document.querySelectorAll('.ui-wire.is-active').forEach(path=>path.parentNode.append(path));
