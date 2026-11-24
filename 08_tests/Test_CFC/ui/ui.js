@@ -94,3 +94,6 @@ function branchNumbers(order,graph){
  }
  return labels;
 }
+
+// Ссылка на главную всегда открывает свежую версию, а не копию из кеша браузера.
+document.querySelectorAll('.overview-link').forEach(a=>{const fresh=()=>{a.href=a.getAttribute('href').split('?')[0]+'?revision='+Date.now()};a.addEventListener('click',fresh);a.addEventListener('auxclick',fresh)});
