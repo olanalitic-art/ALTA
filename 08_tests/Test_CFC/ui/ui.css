@@ -24,3 +24,4 @@
 .execution-order{width:auto;min-width:26px;padding:0 7px;right:0;top:-25px;border-radius:13px;white-space:nowrap}
 .static-node:has(.execution-order)>.node-description{top:-46px}
 .static-node .cfc-node:has(>[data-cfc="AltaCFC_Ports"]){z-index:3}
+.title-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.title-row h1{margin:0}.program-name{display:inline-flex;align-items:center;gap:10px;font-size:13px}
