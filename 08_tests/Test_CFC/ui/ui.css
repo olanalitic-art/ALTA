@@ -11,7 +11,7 @@
 .static-node:focus-visible{outline:2px solid var(--cfc-operators-border-focused);outline-offset:5px}
 .ui-wire.is-active{stroke:var(--cfc-lines-active);stroke-width:2.5}
 .static-node .is-active-port>.cfc-node>.cfc-node{background:var(--cfc-ports-focused-bg)!important;box-shadow:inset 0 2px 0 var(--cfc-ports-focused-border),inset -2px 0 0 var(--cfc-ports-focused-border),inset 0 -2px 0 var(--cfc-ports-focused-border),inset 2px 0 0 var(--cfc-ports-focused-border)!important}
-#selection-status{font-size:12px}
+#selection-status{font-size:15px;font-weight:500;color:var(--cfc-docs-label)}
 
 .execution-order[hidden]{display:none}
 .static-node.is-related:not(.is-selected)>.cfc-component::before{content:"";position:absolute;inset:0;z-index:2;border-radius:8px;box-shadow:0 0 0 1px var(--cfc-operators-border-focused);pointer-events:none}
