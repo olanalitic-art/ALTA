@@ -26,3 +26,4 @@
 .static-node .cfc-node:has(>[data-cfc="AltaCFC_Ports"]){z-index:3}
 .title-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.title-row h1{margin:0}.program-name{display:inline-flex;align-items:center;gap:10px;font-size:13px}
 .overview-link{height:32px;padding:0 14px 0 10px;border:1px solid var(--frame);border-radius:6px;background:var(--chrome);color:var(--cfc-docs-label)}.overview-link:hover{background:var(--cfc-canvas-grid);color:var(--cfc-docs-label)}
+.page-heading h1{margin:0}.overline-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.overline-row .overline{margin:0}
