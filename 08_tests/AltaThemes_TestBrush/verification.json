@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "source_commit": "b5e6ddac6e5c2cdc4725e906a8f607d74d79aa73",
+  "source_file_byte_equality": {
+    "matched": 25,
+    "total": 25,
+    "percent": 100
+  },
+  "selected_components": [
+    {
+      "component": "Button",
+      "styles": 18,
+      "direct_style_setters": 45,
+      "templates": 0,
+      "brush_keys_including_shared_and_preview": 22,
+      "brush_application_sites": 26
+    },
+    {
+      "component": "TextBox",
+      "styles": 12,
+      "direct_style_setters": 31,
+      "templates": 0,
+      "brush_keys_including_shared_and_preview": 17,
+      "brush_application_sites": 20
+    },
+    {
+      "component": "CheckBox",
+      "styles": 13,
+      "direct_style_setters": 26,
+      "templates": 1,
+      "brush_keys_including_shared_and_preview": 18,
+      "brush_application_sites": 20
+    },
+    {
+      "component": "RadioButton",
+      "styles": 15,
+      "direct_style_setters": 23,
+      "templates": 1,
+      "brush_keys_including_shared_and_preview": 16,
+      "brush_application_sites": 17
+    },
+    {
+      "component": "ToggleButton",
+      "styles": 13,
+      "direct_style_setters": 29,
+      "templates": 2,
+      "brush_keys_including_shared_and_preview": 15,
+      "brush_application_sites": 15
+    }
+  ],
+  "unique_brush_keys": 76,
+  "theme_definitions_verified": 152,
+  "palette_colors": 304,
+  "checks": [
+    "source bytes compared to downloaded archive",
+    "all primary Style nodes and direct setters compared",
+    "all primary ControlTemplate XML compared",
+    "all brush names, definition attributes and XML compared",
+    "resolved Light/Dark colors compared directly to source palette",
+    "all direct runtime brush usage sites reconciled",
+    "shared Button brushes in ToggleButton and exact TextBox hover resource checked"
+  ],
+  "runtime_avalonia_tested": false
+}
