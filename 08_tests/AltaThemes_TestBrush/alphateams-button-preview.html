@@ -1,0 +1,225 @@
+<div id="alphateams-button-preview" class="viz-dotted-background">
+  <style>
+    #alphateams-button-preview { width:100%; }
+    #alphateams-button-preview .at-stage { display:flex; justify-content:center; padding:24px 0; }
+    #alphateams-button-preview .at-plugin {
+      --at-bg:light-dark(#ffffff,#2e3136); --at-panel:light-dark(#f7f7f9,#26282c);
+      --at-field:light-dark(#f0f0f4,#24262b); --at-text:light-dark(#282c34,#f5f5f7);
+      --at-secondary:light-dark(#606571,#b9bdc8); --at-line:light-dark(#dedfe6,#454952);
+      --at-accent:light-dark(#6650a9,#b7a7ff); --at-header:light-dark(#eee8f5,#5c4b73);
+      box-sizing:border-box; width:100%; max-width:440px; min-height:730px;
+      background:var(--at-bg); color:var(--at-text); border:1px solid var(--at-line);
+      border-radius:12px; box-shadow:0 12px 40px #00000018; overflow:hidden;
+      font:12px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      display:flex; flex-direction:column;
+    }
+    #alphateams-button-preview .at-plugin * { box-sizing:border-box; }
+    #alphateams-button-preview .at-plugin h2, #alphateams-button-preview .at-plugin h3,
+    #alphateams-button-preview .at-plugin p { margin:0; }
+    #alphateams-button-preview .at-plugin button, #alphateams-button-preview .at-plugin summary { font:inherit; }
+    #alphateams-button-preview .at-titlebar { display:flex; align-items:center; gap:9px; padding:14px 20px; border-bottom:1px solid var(--at-line); background:var(--at-panel); }
+    #alphateams-button-preview .at-titlebar strong { font-size:12px; font-weight:500; }
+    #alphateams-button-preview .at-titlebar .at-version { margin-left:auto; color:var(--at-secondary); font-size:11px; }
+    #alphateams-button-preview .at-brand-icon { color:var(--at-accent); display:flex; }
+    #alphateams-button-preview .at-brand-icon svg { width:16px; height:16px; }
+    #alphateams-button-preview .at-source { padding:16px 20px; background:var(--at-header); }
+    #alphateams-button-preview .at-source-label { color:var(--at-secondary); font-size:11px; margin-bottom:5px; }
+    #alphateams-button-preview .at-source-row { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    #alphateams-button-preview .at-source-name { font-weight:500; font-size:14px; }
+    #alphateams-button-preview .at-source-version { font-size:11px; color:var(--at-secondary); }
+    #alphateams-button-preview .at-selection { padding:20px; border-bottom:1px solid var(--at-line); background:var(--at-panel); }
+    #alphateams-button-preview .at-selection-type { color:var(--at-secondary); font-size:11px; margin-bottom:6px; }
+    #alphateams-button-preview .at-selection-row { display:flex; gap:12px; align-items:center; }
+    #alphateams-button-preview .at-selection h2 { font-size:18px; font-weight:500; flex:1; min-width:0; overflow-wrap:anywhere; }
+    #alphateams-button-preview .at-scan { flex-shrink:0; padding:6px 15px; border:1px solid var(--at-line); border-radius:6px; background:var(--at-field); color:var(--at-text); }
+    #alphateams-button-preview .at-scan:hover { border-color:var(--at-accent); }
+    #alphateams-button-preview .at-context { display:flex; flex-wrap:wrap; gap:8px 16px; margin-top:10px; color:var(--at-secondary); font-size:11px; }
+    #alphateams-button-preview .at-context b { font-weight:400; color:var(--at-text); }
+    #alphateams-button-preview .at-theme-row { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:16px; }
+    #alphateams-button-preview .at-theme-label { color:var(--at-secondary); font-size:11px; }
+    #alphateams-button-preview .at-theme-switch { display:flex; gap:3px; padding:3px; background:var(--at-field); border:1px solid var(--at-line); border-radius:7px; }
+    #alphateams-button-preview .at-theme-switch button { display:flex; align-items:center; justify-content:center; gap:6px; min-width:75px; min-height:30px; padding:5px 10px; border:0; border-radius:4px; background:transparent; color:var(--at-secondary); }
+    #alphateams-button-preview .at-theme-switch button[aria-pressed="true"] { background:light-dark(#6650a9,#b7a7ff); color:light-dark(#ffffff,#26282c); }
+    #alphateams-button-preview .at-theme-switch button:hover:not([aria-pressed="true"]) { color:var(--at-text); }
+    #alphateams-button-preview .at-theme-switch svg { width:14px; height:14px; }
+    #alphateams-button-preview .at-content {
+      --at-bg:light-dark(#ffffff,#2e3136); --at-panel:light-dark(#f7f7f9,#26282c);
+      --at-field:light-dark(#f0f0f4,#24262b); --at-text:light-dark(#282c34,#f5f5f7);
+      --at-secondary:light-dark(#606571,#b9bdc8); --at-line:light-dark(#dedfe6,#454952);
+      --at-accent:light-dark(#6650a9,#b7a7ff);
+      padding:20px; flex:1; background:var(--at-bg); color:var(--at-text);
+    }
+    #alphateams-button-preview .at-section-head { display:flex; align-items:baseline; gap:8px; margin-bottom:2px; }
+    #alphateams-button-preview .at-section-head h3 { font-size:12px; font-weight:500; }
+    #alphateams-button-preview .at-count { font-size:11px; color:var(--at-secondary); }
+    #alphateams-button-preview .at-brush { padding:18px 0; border-bottom:1px solid var(--at-line); }
+    #alphateams-button-preview .at-role { display:flex; justify-content:space-between; gap:12px; align-items:baseline; margin-bottom:8px; }
+    #alphateams-button-preview .at-role-name { font-weight:500; }
+    #alphateams-button-preview .at-property { color:var(--at-secondary); font-size:11px; }
+    #alphateams-button-preview .at-key-row { display:flex; align-items:flex-start; gap:10px; }
+    #alphateams-button-preview .at-key { flex:1; min-width:0; font:12px/1.6 "SFMono-Regular",Consolas,"Liberation Mono",monospace; overflow-wrap:anywhere; color:var(--at-text); background:none; padding:0; border:none; user-select:all; }
+    #alphateams-button-preview .at-copy { flex-shrink:0; width:28px; height:28px; padding:5px; margin-top:-3px; border:1px solid transparent; border-radius:5px; background:transparent; color:var(--at-secondary); display:flex; align-items:center; justify-content:center; }
+    #alphateams-button-preview .at-copy:hover { border-color:var(--at-line); background:var(--at-field); color:var(--at-text); }
+    #alphateams-button-preview .at-copy svg { width:14px; height:14px; }
+    #alphateams-button-preview .at-color { display:flex; align-items:center; flex-wrap:wrap; gap:7px; color:var(--at-secondary); font-size:11px; margin-top:9px; font-variant-numeric:tabular-nums; }
+    #alphateams-button-preview .at-swatch { width:13px; height:13px; border:1px solid #88888870; border-radius:3px; flex-shrink:0; }
+    #alphateams-button-preview .at-parameters { margin-top:20px; }
+    #alphateams-button-preview .at-parameters summary { display:flex; align-items:center; justify-content:space-between; list-style:none; color:var(--at-secondary); padding:2px 0 10px; }
+    #alphateams-button-preview .at-parameters summary::-webkit-details-marker { display:none; }
+    #alphateams-button-preview .at-parameters summary svg { width:14px; height:14px; transition:transform .15s; }
+    #alphateams-button-preview .at-parameters[open] summary svg { transform:rotate(180deg); }
+    #alphateams-button-preview .at-parameter-list { margin:0; }
+    #alphateams-button-preview .at-parameter { display:flex; justify-content:space-between; gap:16px; padding:7px 0; font-size:11px; }
+    #alphateams-button-preview .at-parameter dt { color:var(--at-secondary); }
+    #alphateams-button-preview .at-parameter dd { margin:0; text-align:right; font-variant-numeric:tabular-nums; }
+    #alphateams-button-preview .at-parameter code { font:11px/1.5 "SFMono-Regular",Consolas,monospace; background:transparent; color:var(--at-text); border:0; padding:0; }
+    #alphateams-button-preview .at-footer { border-top:1px solid var(--at-line); padding:13px 20px; background:var(--at-panel); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:11px; color:var(--at-secondary); }
+    #alphateams-button-preview .at-footer a { color:var(--at-secondary); text-decoration:none; display:flex; align-items:center; gap:5px; }
+    #alphateams-button-preview .at-footer a:hover { color:var(--at-accent); }
+    #alphateams-button-preview .at-footer svg { width:12px; height:12px; }
+    #alphateams-button-preview .at-feedback { min-height:18px; margin-top:10px; color:var(--at-secondary); font-size:11px; }
+    #alphateams-button-preview .at-plugin button:focus-visible,
+    #alphateams-button-preview .at-plugin summary:focus-visible,
+    #alphateams-button-preview .at-plugin a:focus-visible { outline:2px solid var(--at-accent); outline-offset:3px; }
+    #alphateams-button-preview .at-color[hidden] { display:none; }
+    @media (max-width:480px) {
+      #alphateams-button-preview .at-stage { padding:12px 0; }
+      #alphateams-button-preview .at-plugin { border-radius:8px; }
+      #alphateams-button-preview .at-content, #alphateams-button-preview .at-selection { padding:16px; }
+      #alphateams-button-preview .at-titlebar, #alphateams-button-preview .at-source, #alphateams-button-preview .at-footer { padding-left:16px; padding-right:16px; }
+    }
+    @media (pointer:coarse) { #alphateams-button-preview .at-copy { width:44px; height:44px; } #alphateams-button-preview .at-theme-switch button { min-height:44px; } }
+    @media (prefers-reduced-motion:reduce) { #alphateams-button-preview .at-parameters summary svg { transition:none; } }
+  </style>
+  <div class="at-stage">
+    <article class="at-plugin" aria-label="Макет плагина AlphaTeams: выбрана кнопка">
+      <header class="at-titlebar">
+        <span class="at-brand-icon"><i data-lucide="layers-2" aria-hidden="true"></i></span>
+        <strong>ALTA Style Inspector · AlphaTeams</strong>
+        <span class="at-version">0.1.0</span>
+      </header>
+      <section class="at-source" aria-label="Источник кистей">
+        <p class="at-source-label">Библиотека разработчиков</p>
+        <div class="at-source-row"><span class="at-source-name">Alta.Themes</span><span class="at-source-version">1.0.21</span></div>
+      </section>
+      <section class="at-selection" aria-label="Выбранный компонент">
+        <p class="at-selection-type">Экземпляр компонента</p>
+        <div class="at-selection-row"><h2>Button / Primary</h2><button class="at-scan cursor-interaction" type="button" aria-label="Scan: обновить просмотр параметров">Scan</button></div>
+        <div class="at-context"><span>Состояние <b data-state-label>Default</b></span><span>Просмотрено</span></div>
+        <div class="at-theme-row">
+          <span class="at-theme-label" id="at-theme-label">Тема кнопки</span>
+          <div class="at-theme-switch" role="group" aria-labelledby="at-theme-label">
+            <button type="button" class="cursor-interaction" data-theme="Light" aria-pressed="true"><i data-lucide="sun" aria-hidden="true"></i>Light</button>
+            <button type="button" class="cursor-interaction" data-theme="Dark" aria-pressed="false"><i data-lucide="moon" aria-hidden="true"></i>Dark</button>
+          </div>
+        </div>
+      </section>
+      <div class="at-content">
+        <div class="at-section-head"><h3>Кисти Alta.Themes</h3><span class="at-count">2</span></div>
+        <section class="at-brush" aria-label="Кисть фона">
+          <div class="at-role"><span class="at-role-name">Фон</span><span class="at-property">Background</span></div>
+          <div class="at-key-row"><code class="at-key" data-brush-key="background">ButtonControlBackgroundBrush</code><button type="button" class="at-copy cursor-interaction" data-copy="background" aria-label="Копировать имя кисти фона"><i data-lucide="copy" aria-hidden="true"></i></button></div>
+          <div class="at-color" data-color-row><span class="at-swatch" data-swatch="background" style="background:#4561DB"></span><span data-hex="background">#4561DB</span><span aria-hidden="true">·</span><span data-palette="background">LightBlue9</span></div>
+        </section>
+        <section class="at-brush" aria-label="Кисть содержимого">
+          <div class="at-role"><span class="at-role-name">Содержимое</span><span class="at-property">Foreground</span></div>
+          <div class="at-key-row"><code class="at-key" data-brush-key="foreground">ButtonControlForegroundBrush</code><button type="button" class="at-copy cursor-interaction" data-copy="foreground" aria-label="Копировать имя кисти содержимого"><i data-lucide="copy" aria-hidden="true"></i></button></div>
+          <div class="at-color" data-color-row><span class="at-swatch" data-swatch="foreground" style="background:#FFFFFF"></span><span data-hex="foreground">#FFFFFF</span><span aria-hidden="true">·</span><span data-palette="foreground">White</span></div>
+        </section>
+        <details class="at-parameters" open>
+          <summary class="cursor-interaction"><span>Параметры компонента</span><i data-lucide="chevron-down" aria-hidden="true"></i></summary>
+          <dl class="at-parameter-list">
+            <div class="at-parameter"><dt>Скругление · <code>CornerRadius</code></dt><dd>4</dd></div>
+            <div class="at-parameter"><dt>Отступы · <code>Padding</code></dt><dd>12, 4</dd></div>
+            <div class="at-parameter"><dt>Шрифт · <code>FontFamily</code></dt><dd>Rubik</dd></div>
+            <div class="at-parameter"><dt>Размер · <code>FontSize</code></dt><dd>14</dd></div>
+          </dl>
+        </details>
+        <p class="at-feedback" role="status" aria-live="polite"></p>
+      </div>
+      <footer class="at-footer"><span>Только просмотр</span><a href="https://rnd.owen.ru/softwaredevelopmentbureau/alta.themes/-/blob/b5e6ddac6e5c2cdc4725e906a8f607d74d79aa73/Alta.Themes/Controls/Buttons/Button.axaml#L67" target="_blank" rel="noopener noreferrer">Исходник кнопки<i data-lucide="external-link" aria-hidden="true"></i></a></footer>
+    </article>
+  </div>
+  <script>
+    (() => {
+      const root = document.getElementById('alphateams-button-preview');
+      const panel = root.querySelector('.at-plugin');
+      const state = { theme:'Dark', interaction:'Default', showColorValues:true, showParameters:true };
+      const saved = window.openai && window.openai.widgetState;
+      function applySaved(value) {
+        if (!value) return;
+        const model = value.modelContent || {};
+        const ui = value.privateContent || {};
+        if (['Light','Dark'].includes(model.theme)) state.theme = model.theme;
+        if (['Default','Hover','Pressed','Disabled'].includes(model.interaction)) state.interaction = model.interaction;
+        if (typeof ui.showColorValues === 'boolean') state.showColorValues = ui.showColorValues;
+        if (typeof ui.showParameters === 'boolean') state.showParameters = ui.showParameters;
+      }
+      applySaved(saved);
+      const examples = {
+        Default: {background:'ButtonControlBackgroundBrush', foreground:'ButtonControlForegroundBrush', Light:{hex:'#4561DB', resource:'LightBlue9'}, Dark:{hex:'#5684DD',resource:'DarkBlue7'}},
+        Hover: {background:'ButtonControlBackgroundHoverBrush', foreground:'ButtonControlForegroundHoverBrush', Light:{hex:'#1E2F93',resource:'LightBlue11'}, Dark:{hex:'#1E4898',resource:'DarkBlue9'}},
+        Pressed: {background:'ButtonControlBackgroundPressedBrush', foreground:'ButtonControlForegroundPressedBrush', Light:{hex:'#121F7A',resource:'LightBlue12'}, Dark:{hex:'#15284D',resource:'DarkBlue12'}},
+        Disabled: {background:'ButtonControlBackgroundDisabledBrush', foreground:'ButtonControlForegroundDisabledBrush', Light:{hex:'#F3F4F7',resource:'LightGray3'}, Dark:{hex:'#585E6C',resource:'DarkGray11'}}
+      };
+      function render() {
+        const example = examples[state.interaction];
+        const background = example[state.theme];
+        const foreground = state.interaction === 'Disabled' ? (state.theme === 'Light' ? {hex:'#B3BACB',resource:'LightGray7'} : {hex:'#C7C9CE',resource:'DarkGray7'}) : {hex:'#FFFFFF',resource:'White'};
+        root.querySelector('.at-content').style.colorScheme = state.theme.toLowerCase();
+        root.querySelector('[data-state-label]').textContent = state.interaction;
+        root.querySelectorAll('[data-theme]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.theme === state.theme)));
+        for (const [role, value] of Object.entries({background,foreground})) {
+          root.querySelector('[data-brush-key="'+role+'"]').textContent = example[role];
+          root.querySelector('[data-hex="'+role+'"]').textContent = value.hex;
+          root.querySelector('[data-palette="'+role+'"]').textContent = value.resource;
+          root.querySelector('[data-swatch="'+role+'"]').style.background = value.hex;
+        }
+        root.querySelectorAll('[data-color-row]').forEach(row => row.hidden = !state.showColorValues);
+        root.querySelector('.at-parameters').hidden = !state.showParameters;
+        root.querySelector('.at-feedback').textContent = '';
+      }
+      render();
+      function remember() {
+        if (window.openai && window.openai.setWidgetState) {
+          window.openai.setWidgetState({modelContent:{theme:state.theme,interaction:state.interaction},privateContent:{showColorValues:state.showColorValues,showParameters:state.showParameters}}).catch(() => {});
+        }
+      }
+      root.querySelectorAll('[data-theme]').forEach(button => button.addEventListener('click', () => {
+        state.theme = button.dataset.theme;
+        render();
+        root.querySelector('.at-feedback').textContent = state.theme === 'Dark' ? 'Тёмная тема' : 'Светлая тема';
+        remember();
+      }));
+      root.querySelector('.at-scan').addEventListener('click', () => {
+        render();
+        root.querySelector('.at-feedback').textContent = 'Параметры обновлены';
+      });
+      window.addEventListener('openai:set_globals', event => {
+        const globals = event.detail && event.detail.globals;
+        if (globals && globals.widgetState) { applySaved(globals.widgetState); render(); }
+      });
+      root.querySelectorAll('[data-copy]').forEach(button => button.addEventListener('click', async () => {
+        const key = root.querySelector('[data-brush-key="'+button.dataset.copy+'"]').textContent;
+        const status = root.querySelector('.at-feedback');
+        try {
+          if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+          await navigator.clipboard.writeText(key);
+          status.textContent = 'Имя кисти скопировано';
+        } catch (_) {
+          const selection = window.getSelection();
+          const range = document.createRange();
+          range.selectNodeContents(root.querySelector('[data-brush-key="'+button.dataset.copy+'"]'));
+          if (selection) { selection.removeAllRanges(); selection.addRange(range); }
+          status.textContent = 'Имя выделено — используйте команду копирования';
+        }
+      }));
+      if (globalThis.Tweak) {
+        const tweak = new Tweak({container:panel,onChange:() => {render();remember();}});
+        tweak.addSelect(state,'interaction',{label:'Состояние выбранной кнопки',options:['Default','Hover','Pressed','Disabled']});
+        tweak.addToggle(state,'showColorValues',{label:'Показывать цвет и ресурс палитры'});
+        tweak.addToggle(state,'showParameters',{label:'Показывать параметры компонента'});
+      }
+    })();
+  </script>
+</div>
